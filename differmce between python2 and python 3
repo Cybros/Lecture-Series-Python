@@ -1,0 +1,4 @@
+in python 2 print is treated as a statement rather than a function 
+in python 3 print is treated as a funtion
+if you want to print 1.5 in python 2 then you have to write 3.0/2.0
+in python 3 to print 1.5 you have to write 3/2
