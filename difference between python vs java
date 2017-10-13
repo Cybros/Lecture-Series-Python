@@ -1,0 +1,5 @@
+The first and basic thing in each language is printing something.
+In java we need a bit big syntax to print something.
+ex. :-
+System.out.println(argument) prints out its argument and ends the line.
+whereas in python we just have to write print and then inside double quotes("") write argument to print output
