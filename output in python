@@ -1,0 +1,3 @@
+to get output in python 
+in python 2.x we have to write print'hello'
+in python 3.x we have to write print('hello')
