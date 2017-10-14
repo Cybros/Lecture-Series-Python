@@ -1,0 +1,41 @@
+0:00:00.610,0:00:01.980
+As we saw in the previous code
+
+0:00:01.980,0:00:05.130
+example, properties can have different types. These are
+
+0:00:05.130,0:00:08.860
+called property types. For the recipe kind, some
+
+0:00:08.860,0:00:11.495
+of the property names and types were name,
+
+0:00:11.495,0:00:15.841
+which was a string. Vegetarian, a boolean indicator.
+
+0:00:15.841,0:00:19.490
+And the number of servings, an integer. But
+
+0:00:19.490,0:00:22.135
+these are just a few property types. In
+
+0:00:22.135,0:00:25.530
+fact, Datastore supports a lot more property types.
+
+0:00:25.530,0:00:28.113
+And we mean, a lot. The
+
+0:00:28.113,0:00:31.403
+official documentation on developers.google.com lists around
+
+0:00:31.403,0:00:34.870
+20 of them. In this class, we're only going to use a small
+
+0:00:34.870,0:00:38.440
+subset of these. And the ones you can see listed here are some
+
+0:00:38.440,0:00:41.245
+of the most common properties. Integers.
+
+0:00:41.245,0:00:46.080
+Floating-point numbers. Strings. Dates and binary data.

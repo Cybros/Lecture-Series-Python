@@ -1,0 +1,29 @@
+0:00:00.008,0:00:03.310
+The answer is, purchase tickets. The reason for
+
+0:00:03.310,0:00:05.939
+this, is that when you purchase tickets, you probably
+
+0:00:05.939,0:00:08.580
+want to immediately see the confirmation that you are
+
+0:00:08.580,0:00:11.720
+registered. To guarantee this, we need to have strong
+
+0:00:11.720,0:00:14.200
+consistency. And in order to have the term strong
+
+0:00:14.200,0:00:18.017
+consistency, we need to establish an ancestor relationship. The
+
+0:00:18.017,0:00:22.150
+other two, add social components and conference venus. Are
+
+0:00:22.150,0:00:24.860
+probably not so sensitive to be up to date.
+
+0:00:24.860,0:00:28.110
+So there may not be, any need for strong consistency.
+
+0:00:28.110,0:00:31.480
+So eventual consistency is probably a better choice for those.

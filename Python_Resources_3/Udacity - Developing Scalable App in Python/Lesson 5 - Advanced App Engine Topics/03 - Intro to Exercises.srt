@@ -1,0 +1,71 @@
+0:00:00.920,0:00:04.130
+Your conference central application[br]is now fully functional, and
+
+0:00:04.130,0:00:08.250
+you can save and get profile and[br]conference entities whenever you want.
+
+0:00:08.250,0:00:10.700
+But it's not very efficient yet.
+
+0:00:10.700,0:00:14.040
+Every time your code makes a call to[br]get an entity from the data store,
+
+0:00:14.040,0:00:16.650
+that entity can be fetched from disk.
+
+0:00:16.650,0:00:19.800
+That's slow for you users, and[br]it also counts against your daily quota.
+
+0:00:19.800,0:00:22.870
+And that's why App Engine[br]offers Memcache
+
+0:00:22.870,0:00:25.570
+as a way to automatically[br]cache your data.
+
+0:00:25.570,0:00:30.040
+In this lesson you'll learn how NDB[br]takes care of caching entities.
+
+0:00:30.040,0:00:32.070
+And because that's really too easy,
+
+0:00:32.070,0:00:36.430
+we'll also take a look at how to use[br]the underlying Memcache Python API
+
+0:00:36.430,0:00:38.630
+to put entries into the Memcache and[br]get them back.
+
+0:00:39.770,0:00:43.010
+Let's suppose you want to run an ad[br]encouraging people to sign up for
+
+0:00:43.010,0:00:45.370
+conferences that are nearly sold out.
+
+0:00:45.370,0:00:48.230
+You can store those[br]announcements in Memcache.
+
+0:00:48.230,0:00:51.040
+There's no need to save them in[br]datastore because they are very
+
+0:00:51.040,0:00:52.180
+transient in nature, and
+
+0:00:52.180,0:00:55.210
+it doesn't really matter if an[br]announcement gets evicted from Memcache.
+
+0:00:56.830,0:00:59.800
+Another feature of App Engine[br]that we'll explore in this lesson
+
+0:00:59.800,0:01:03.790
+is how to deal with long-running[br]tasks by using task queues.
+
+0:01:03.790,0:01:07.620
+And to do that, we'll use task queues to[br]set a confirmation email when someone
+
+0:01:07.620,0:01:09.370
+creates a conference.
+
+0:01:09.370,0:01:13.310
+And we'll wrap up the lesson by creating[br]a cron job, that periodically checks for
+
+0:01:13.310,0:01:17.410
+conferences that are nearly sold out and[br]updates the announcement in Memcache.

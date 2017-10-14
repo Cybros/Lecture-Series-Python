@@ -1,0 +1,77 @@
+0:00:00.190,0:00:02.760
+So you've seen that[br]the APIs Explorer lets you try out
+
+0:00:02.760,0:00:05.670
+the API that your application[br]exposes through endpoints.
+
+0:00:05.670,0:00:09.380
+Google uses the APIs Explorer in the[br]same way to let you investigate the APIs
+
+0:00:09.380,0:00:12.540
+that are publicly available for[br]the services that it provides.
+
+0:00:12.540,0:00:15.117
+For example, let's consider[br]Google's translation service.
+
+0:00:15.117,0:00:18.823
+You can go to tranlate.google.com[br]to translate some text from one
+
+0:00:18.823,0:00:20.063
+language to another.
+
+0:00:20.063,0:00:23.690
+However, you could also write[br]applications that do translations using
+
+0:00:23.690,0:00:24.707
+the Translate API.
+
+0:00:24.707,0:00:28.236
+And you can try out the Translate API[br]using the APIs Explorer.
+
+0:00:28.236,0:00:31.730
+It's easy to find the APIs Explorer for[br]Google's public APIs.
+
+0:00:31.730,0:00:32.380
+Just search for it.
+
+0:00:32.380,0:00:35.563
+When you go to the APIs Explorer,[br]you'll see a list of all of
+
+0:00:35.563,0:00:38.440
+the APIs that Google provides for[br]developers to use.
+
+0:00:38.440,0:00:42.224
+Search or scroll down to[br]the Translate API and click on that.
+
+0:00:42.224,0:00:45.475
+You'll see the functions of the[br]Translate API exposes through endpoints.
+
+0:00:45.475,0:00:47.475
+These are functions that you,[br]as a developer,
+
+0:00:47.475,0:00:49.200
+can use in your own application.
+
+0:00:49.200,0:00:50.330
+Now a task for you.
+
+0:00:50.330,0:00:51.720
+Go to the APIs Explorer for
+
+0:00:51.720,0:00:55.640
+the translation service to find out the[br]meaning in English of the name Gundega,
+
+0:00:55.640,0:00:58.240
+the name of the instructional[br]designer for this course.
+
+0:00:58.240,0:01:02.260
+Using the Translate API, find[br]the language.translations.list function.
+
+0:01:02.260,0:01:04.099
+Use a target language of en and
+
+0:01:04.099,0:01:06.930
+then try to find out what[br]Gundega means in English.
+
+0:01:06.930,0:01:10.610
+Then from the returned message, find out[br]what the detected source language was.

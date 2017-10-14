@@ -1,0 +1,14 @@
+0:00:00.260,0:00:00.990
+Okay.[br]Again,
+
+0:00:00.990,0:00:03.940
+make sure to change your cron job[br]from every minute to every hour,
+
+0:00:03.940,0:00:04.780
+or less than that.
+
+0:00:04.780,0:00:08.800
+And then the answer here is that to[br]schedule it to run every two hours,
+
+0:00:08.800,0:00:12.600
+you'd say schedule: every 2 hours,[br]no surprise there.

@@ -1,0 +1,128 @@
+0:00:00.000,0:00:00.708
+Okay.[br]Cool.
+
+0:00:00.708,0:00:02.209
+You now know about decorators, so
+
+0:00:02.209,0:00:04.500
+let's take a look at how[br]the endpoints are defined.
+
+0:00:04.500,0:00:06.871
+The endpoints API supports[br]a lot of arguments, but
+
+0:00:06.871,0:00:10.417
+here we're just using name and version,[br]which is the required arguments.
+
+0:00:10.417,0:00:14.417
+As you can see, the API name and the[br]class name don't have to be the same.
+
+0:00:14.417,0:00:18.513
+The methods inside this class will[br]become the methods of our endpoints API,
+
+0:00:18.513,0:00:21.208
+each gets decorated[br]with @endpoints.method.
+
+0:00:21.208,0:00:24.681
+And the arguments here tell what type[br]the method takes in their request and
+
+0:00:24.681,0:00:26.708
+what it returns and[br]some other things too.
+
+0:00:26.708,0:00:30.128
+Now, every API method has a request[br]class and a response class,
+
+0:00:30.128,0:00:32.417
+even though some of them are void or[br]empty.
+
+0:00:32.417,0:00:36.346
+The request and the response classes[br]end up being different subclasses of
+
+0:00:36.346,0:00:40.542
+ProtoRPC protocol buffer types, which[br]I'll tell you more about in a moment.
+
+0:00:40.542,0:00:41.931
+For the response class,
+
+0:00:41.931,0:00:46.043
+you just need to define a class that's[br]a subclass of messages.message.
+
+0:00:46.043,0:00:47.792
+It can contain as many[br]fields as you want.
+
+0:00:47.792,0:00:51.458
+In this simple example, it just[br]contains one field called greeting.
+
+0:00:51.458,0:00:53.500
+We also have to define[br]the request class.
+
+0:00:53.500,0:00:54.875
+This request is pretty simple.
+
+0:00:54.875,0:00:57.875
+It also just contains one field,[br]name, which is a string.
+
+0:00:57.875,0:01:00.792
+But later, we'll see requests[br]that are a lot more complex.
+
+0:01:00.792,0:01:05.238
+The resource container class supports[br]options that messages.message doesn't,
+
+0:01:05.238,0:01:08.375
+such as query string parameters,[br]which we'll use later.
+
+0:01:08.375,0:01:10.833
+So we'll use that now just[br]to have a good example.
+
+0:01:10.833,0:01:15.125
+And again, each API method is[br]a method inside the API class.
+
+0:01:15.125,0:01:17.750
+That function returns a message object.
+
+0:01:17.750,0:01:19.475
+Here we have a hello object and
+
+0:01:19.475,0:01:23.417
+we decorate that method with[br]the @endpoints.method decorator.
+
+0:01:23.417,0:01:26.708
+The decorator tells the API[br]system the request class.
+
+0:01:26.708,0:01:28.365
+Here we have VoidMessage and
+
+0:01:28.365,0:01:33.000
+then here we have REQUEST_CONTAINER and[br]the response class, which is Hello.
+
+0:01:33.000,0:01:35.625
+And some other information,[br]like the http_method.
+
+0:01:35.625,0:01:38.588
+And down at the bottom of the file,[br]down here on line 46,
+
+0:01:38.588,0:01:42.292
+we have the code that actually starts[br]the server that supports this API.
+
+0:01:42.292,0:01:45.083
+About these message classes,[br]what's up with them?
+
+0:01:45.083,0:01:47.500
+And why do these fields have[br]the number one on them?
+
+0:01:47.500,0:01:50.208
+That looks kind of weird, but[br]there's a good reason for it.
+
+0:01:50.208,0:01:52.292
+It has to do with how endpoints works.
+
+0:01:52.292,0:01:55.195
+Endpoints APIs use Google's[br]protocol buffers or protobuf,
+
+0:01:55.195,0:01:57.986
+which is a way of representing[br]data structures efficiently
+
+0:01:57.986,0:02:00.292
+across many different[br]programming languages.
+
+0:02:00.292,0:02:02.660
+Let's take a look at that in[br]some more detail, up ahead.

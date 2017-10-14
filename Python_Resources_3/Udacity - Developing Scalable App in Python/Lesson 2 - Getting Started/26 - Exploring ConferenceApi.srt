@@ -1,0 +1,116 @@
+0:00:00.002,0:00:02.380
+At the top of the conference.py file,
+
+0:00:02.380,0:00:05.702
+you can see several imports[br]from models and settings.
+
+0:00:05.702,0:00:06.782
+Let's take a look at this.
+
+0:00:06.782,0:00:08.757
+First, let's take a look at models.py.
+
+0:00:08.757,0:00:11.592
+The profile class extends ndb.Model and
+
+0:00:11.592,0:00:14.677
+defines how the user[br]profile will look like.
+
+0:00:14.677,0:00:17.535
+The next classes,[br]extend ProtoRPC messages and
+
+0:00:17.535,0:00:20.680
+deal with sending data to and[br]from the endpoints app.
+
+0:00:20.680,0:00:24.245
+ProfileForm mirrors the fields[br]of the profile class.
+
+0:00:24.245,0:00:28.183
+ProfileMiniForm has only the two[br]fields that are editable by users and
+
+0:00:28.183,0:00:31.188
+TeeShirtSize holds enum values for[br]tee shirt sizes,
+
+0:00:31.188,0:00:35.612
+because we don't want users to be able[br]to enter free form values in that field.
+
+0:00:35.612,0:00:37.424
+Let's go back to conference.py.
+
+0:00:37.424,0:00:41.825
+Underneath all of these imports is[br]the definition of the endpoint.api.
+
+0:00:41.825,0:00:45.455
+After that we've provided a couple[br]helper functions for creating and
+
+0:00:45.455,0:00:49.162
+returning the profile object and[br]then we have the endpoint.methods.
+
+0:00:49.162,0:00:51.868
+Let's take a look first at[br]the getProfile function.
+
+0:00:51.868,0:00:56.723
+It's defined as an endpoints.method that[br]supports GET requests with no arguments.
+
+0:00:56.723,0:00:59.962
+So, its request type is[br]message_type set VoidMessage.
+
+0:00:59.962,0:01:02.130
+It's response type is ProfileForm and
+
+0:01:02.130,0:01:05.883
+it calls the private method[br]self._doProfile with no arguments.
+
+0:01:05.883,0:01:10.668
+What doProfile does if called with no[br]arguments is first, get the profile by
+
+0:01:10.668,0:01:16.378
+calling self._getProfileFromUser and[br]then returning self._copyProfileToForm.
+
+0:01:16.378,0:01:19.765
+We first want to develop and pass[br]the functionality of sending data to and
+
+0:01:19.765,0:01:22.276
+from endpoints and[br]this is what is implemented here.
+
+0:01:22.276,0:01:25.832
+We'll deal with indication and[br]saving data in data store later and for
+
+0:01:25.832,0:01:29.335
+testing purposes, get profile from user,[br]return some dummy data.
+
+0:01:29.335,0:01:34.212
+So getProfileFromUser creates an empty[br]profile object and returns it.
+
+0:01:34.212,0:01:38.486
+And copyProfileToForm, then goes over[br]the message fields in ProfileForm and
+
+0:01:38.486,0:01:41.595
+copies matching fields from[br]the provided profile object
+
+0:01:41.595,0:01:43.419
+to ProfileForm message fields.
+
+0:01:43.419,0:01:45.055
+You have to use getattr here,
+
+0:01:45.055,0:01:48.400
+you can't just get the values[br]from using the fields by name.
+
+0:01:48.400,0:01:51.198
+Also, note how the enum field[br]is handled slightly differently.
+
+0:01:51.198,0:01:55.392
+Now, if we look at the getProfile[br]method in API's explorer,
+
+0:01:55.392,0:01:58.628
+we'll see that it works[br]with the void request.
+
+0:01:58.628,0:02:01.167
+And it actually returns[br]a response containing two fields,
+
+0:02:01.167,0:02:03.412
+the ones that are defined[br]to have some sort of value.
+
+0:02:03.412,0:02:08.139
+DisplayName, value Test and teeShirtSize[br]with a value of Not_Specified.

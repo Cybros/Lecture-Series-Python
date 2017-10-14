@@ -1,0 +1,59 @@
+0:00:00.140,0:00:02.460
+So, what are we doing with[br]these filters, anyway?
+
+0:00:02.460,0:00:05.220
+Well, in the app,[br]we want to allow users to search for
+
+0:00:05.220,0:00:07.418
+conferences according to[br]any of these criteria.
+
+0:00:07.418,0:00:10.180
+That's why we're storing[br]an index in them, after all.
+
+0:00:10.180,0:00:13.310
+As usual, the front end for[br]this is already implemented.
+
+0:00:13.310,0:00:15.520
+Next up,[br]we'll be adding the back end logic.
+
+0:00:15.520,0:00:18.420
+Currently, if we add a filter over here,[br]all that happens
+
+0:00:18.420,0:00:22.870
+is the query conferences method gets[br]called, and the filter is just ignored.
+
+0:00:22.870,0:00:24.690
+It just returns all the conferences.
+
+0:00:24.690,0:00:27.700
+But if you look up here in this message,[br]you'll see the filter data
+
+0:00:27.700,0:00:30.290
+that the front end is[br]sending to the back end API.
+
+0:00:30.290,0:00:35.510
+We see filters, fields, city, operator,[br]eq for equals, value, London,
+
+0:00:35.510,0:00:42.150
+just like this, and field max attendees[br]operator gt for greater than value ten.
+
+0:00:42.150,0:00:44.830
+But it isn't actually[br]applying these filters.
+
+0:00:44.830,0:00:47.416
+That's because currently,[br]our query conferences method takes
+
+0:00:47.416,0:00:50.920
+a conference query forms message,[br]which contains all these filters.
+
+0:00:50.920,0:00:52.760
+Right now it doesn't[br]do anything with it.
+
+0:00:52.760,0:00:55.580
+The next chunk of code we'll be[br]seeing will interpret this filter
+
+0:00:55.580,0:00:58.700
+data structure, and turn it into[br]actual data store filters, and
+
+0:00:58.700,0:01:00.780
+you'll be modifying query[br]conferences to use them.

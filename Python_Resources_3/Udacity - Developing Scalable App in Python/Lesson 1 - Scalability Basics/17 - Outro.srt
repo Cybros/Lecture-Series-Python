@@ -1,0 +1,35 @@
+0:00:00.350,0:00:03.010
+Are you excited yet? We hope you are. We
+
+0:00:03.010,0:00:05.140
+think you should be. Just look at all of these
+
+0:00:05.140,0:00:09.060
+pictures of Google data centers. All the Google services run
+
+0:00:09.060,0:00:11.680
+on the infrastructure that you see. And with the Google
+
+0:00:11.680,0:00:15.890
+cloud platform and app engine, this infrastructure is also available
+
+0:00:15.890,0:00:19.030
+to you. That means that the code you create in
+
+0:00:19.030,0:00:22.300
+this course will execute alongside all of the other Google
+
+0:00:22.300,0:00:25.950
+services. And can leverage from the same scale security and
+
+0:00:25.950,0:00:30.090
+performance that Google has built out over the years. We
+
+0:00:30.090,0:00:32.830
+can't wait to get started and have you on your way
+
+0:00:32.830,0:00:36.130
+to write and deploy your own code into these data centers
+
+0:00:36.130,0:00:40.650
+on your journey to writing scalable applications in the Google Cloud.

@@ -1,0 +1,8 @@
+0:00:00.220,0:00:06.046
+So if I was to answer this quiz, I would have to cross local filesystem, shared
+
+0:00:06.046,0:00:12.016
+filesystem, cloud file storage, relational databases,
+
+0:00:12.016,0:00:18.660
+NoSQL databases, and the Google App Engine datastore. Wow, is that good or bad?

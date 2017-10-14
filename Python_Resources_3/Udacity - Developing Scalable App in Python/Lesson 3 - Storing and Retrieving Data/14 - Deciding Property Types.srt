@@ -1,0 +1,101 @@
+0:00:00.004,0:00:00.724
+Hey again.
+
+0:00:00.724,0:00:03.300
+Now that you're well familiar[br]with kinds and properties,
+
+0:00:03.300,0:00:06.297
+let's talk about what goes into[br]a data store kind for user profiles.
+
+0:00:06.297,0:00:08.456
+Let's do in the same way we did recipes.
+
+0:00:08.456,0:00:11.358
+What do we need to store for[br]users of our conference app?
+
+0:00:11.358,0:00:13.739
+Unlike a recipe,[br]where we have one type of user,
+
+0:00:13.739,0:00:15.375
+our cook who is storing recipes.
+
+0:00:15.375,0:00:18.397
+This time we have two different[br]kinds of users, those who create and
+
+0:00:18.397,0:00:19.458
+manage conferences and
+
+0:00:19.458,0:00:23.084
+those who are looking for conferences,[br]registering for them and going to them.
+
+0:00:23.084,0:00:26.860
+But we need to save information for both[br]of those types of users in one kind and
+
+0:00:26.860,0:00:28.749
+we're going to name that kind Profile.
+
+0:00:28.749,0:00:32.162
+So the first thing we need is a unique[br]identifier for the entities key.
+
+0:00:32.162,0:00:34.879
+Now we need to decide what data[br]we need in a user profile.
+
+0:00:34.879,0:00:36.667
+First, we'll have displayName.
+
+0:00:36.667,0:00:39.565
+That's the name that users want to have[br]printed on their conference badges,
+
+0:00:39.565,0:00:42.031
+that might be different from[br]the name on their account after all.
+
+0:00:42.031,0:00:45.699
+Maybe Jennifer Smith wants to be[br]called Jen, or Jenny or maybe Unicorn.
+
+0:00:45.699,0:00:47.812
+Next, we need the user's email address.
+
+0:00:47.812,0:00:50.111
+We're going to call this mainEmail for[br]now.
+
+0:00:50.111,0:00:53.666
+At some point, you might want to extend[br]this with home and work emails and
+
+0:00:53.666,0:00:57.104
+need to decide, which is primary or[br]support another email address for
+
+0:00:57.104,0:00:59.515
+their mobile device to[br]send them text messages.
+
+0:00:59.515,0:01:01.627
+But for now, we'll just have mainEmail.
+
+0:01:01.627,0:01:04.483
+And the next very important[br]thing is your teeShirtSize.
+
+0:01:04.483,0:01:07.735
+People certainly do appreciate having[br]the right sized t-shirt when they go to
+
+0:01:07.735,0:01:08.385
+a conference.
+
+0:01:08.385,0:01:09.894
+Now, it's time for[br]you to think about these.
+
+0:01:09.894,0:01:12.611
+What sorts of properties[br]are each of these fields?
+
+0:01:12.611,0:01:15.827
+Use your imagination and if you need to[br]look up the various property types you
+
+0:01:15.827,0:01:18.602
+can use, check out the docks[br]linked to the Instructor's Notes.
+
+0:01:18.602,0:01:21.690
+For each field,[br]fill in an appropriate property type.
+
+0:01:21.690,0:01:25.246
+Be careful when filling in the answers,[br]because like other Python identifiers,
+
+0:01:25.246,0:01:26.440
+these are case sensitive.

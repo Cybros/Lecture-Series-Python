@@ -1,0 +1,32 @@
+0:00:00.170,0:00:01.780
+All right.[br]So, the first filter that we want to
+
+0:00:01.780,0:00:05.010
+apply is: the conference[br]is taking place in Tokyo,
+
+0:00:05.010,0:00:09.910
+which is to say, conference.city,[br]double equals, string Tokyo.
+
+0:00:09.910,0:00:12.110
+Then, if we want one to[br]nine seats available,
+
+0:00:12.110,0:00:14.980
+that means we want greater than zero and[br]less than ten.
+
+0:00:14.980,0:00:19.160
+You could also use greater than or equal[br]to one, or less than or equal to nine,
+
+0:00:19.160,0:00:21.470
+if you want, but[br]this is pretty straightforward.
+
+0:00:21.470,0:00:23.460
+Then we have three order by conditions.
+
+0:00:23.460,0:00:26.790
+First we want to order by seats[br]available, then by name, and
+
+0:00:26.790,0:00:27.980
+finally by month.
+
+0:00:27.980,0:00:31.000
+And there we go, all on one line, or[br]seven, depending on how you count.

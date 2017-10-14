@@ -1,0 +1,17 @@
+0:00:00.120,0:00:03.210
+So to answer that question let's[br]take a look at our log files.
+
+0:00:03.210,0:00:06.840
+I have here a bad request error: the[br]first sort property must be the same as
+
+0:00:06.840,0:00:09.570
+the property in which[br]the inequality filter is applied.
+
+0:00:09.570,0:00:11.540
+In your query,[br]the first sort property is name,
+
+0:00:11.540,0:00:14.260
+but the inequality filter[br]is on max attendees.
+
+0:00:14.260,0:00:15.740
+So that means that this[br]is the correct answer.

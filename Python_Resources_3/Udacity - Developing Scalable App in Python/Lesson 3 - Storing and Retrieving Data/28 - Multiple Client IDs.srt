@@ -1,0 +1,32 @@
+0:00:00.020,0:00:02.855
+Now let's quickly check your[br]understanding of client IDs.
+
+0:00:02.855,0:00:06.090
+Suppose you wrote an application[br]called Chocolate Chooser,
+
+0:00:06.090,0:00:08.649
+that implements a chocolate API and[br]points API.
+
+0:00:08.649,0:00:12.880
+The app ID for[br]Chocolate Chooser is cho-cho-413, and
+
+0:00:12.880,0:00:15.000
+the client ID is 612 abcd.
+
+0:00:15.000,0:00:18.798
+Now suppose somebody else comes along[br]and writes an application called
+
+0:00:18.798,0:00:22.162
+Meta Menu, that uses JavaScript[br]to access the chocolate API.
+
+0:00:22.162,0:00:27.962
+Their App ID is meta-m-1025 and[br]their Client ID is 2317efgh.
+
+0:00:27.962,0:00:30.941
+Now, you'd like to allow[br]them to access the API, so
+
+0:00:30.941,0:00:35.347
+down here fill in the code that will go[br]into the Chocolate Chooser application
+
+0:00:35.347,0:00:39.110
+to authorize the Meta Menu[br]application to use the Chocolate API.

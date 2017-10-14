@@ -1,0 +1,23 @@
+0:00:00.240,0:00:01.400
+And, here's the solution.
+
+0:00:01.400,0:00:05.540
+You need to retrieve a profile entity,[br]so the class here is Profile.
+
+0:00:05.540,0:00:10.020
+And then,[br]you use the user key to get the entity.
+
+0:00:10.020,0:00:10.760
+Over here in our code,
+
+0:00:10.760,0:00:14.480
+probably see something very[br]much like this, and like that.
+
+0:00:14.480,0:00:17.480
+So now, your app's profile, saving,[br]getting, and updating functionality,
+
+0:00:17.480,0:00:18.840
+should be complete, as well.
+
+0:00:18.840,0:00:19.340
+Good job.

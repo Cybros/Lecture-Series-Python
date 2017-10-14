@@ -1,0 +1,59 @@
+0:00:00.170,0:00:03.100
+But look down here into[br]this safe profile method.
+
+0:00:03.100,0:00:06.230
+This is supposed to save a profile[br]that the user has submitted and
+
+0:00:06.230,0:00:07.910
+return the updated profile.
+
+0:00:07.910,0:00:12.390
+But right now all it does is well,[br]very same thing as get profile.
+
+0:00:12.390,0:00:15.265
+Now what this should do[br]is take display name and
+
+0:00:15.265,0:00:19.260
+t-shirt size from a post request and[br]update the output accordingly.
+
+0:00:19.260,0:00:21.010
+It's not going to save anything yet, but
+
+0:00:21.010,0:00:23.340
+it should return the same[br]thing that it's given.
+
+0:00:23.340,0:00:25.530
+And that's your job in the first[br]programming exercise for
+
+0:00:25.530,0:00:27.000
+this conference central app.
+
+0:00:27.000,0:00:30.396
+You should modify the save profile[br]function to use the appropriate
+
+0:00:30.396,0:00:33.800
+messages.message class from models.py,[br]and
+
+0:00:33.800,0:00:38.130
+pick the one that can send two fields,[br]displayName and teeShirtSize.
+
+0:00:38.130,0:00:40.750
+Then for the method to be able[br]to return the changed values,
+
+0:00:40.750,0:00:44.000
+you'll have to pass that request[br]up to the doProfile function.
+
+0:00:44.000,0:00:47.490
+Complete the steps outlined in TODO[br]1 and deploy the app locally and
+
+0:00:47.490,0:00:50.760
+test by changing display name and[br]t-shirt size in the request.
+
+0:00:50.760,0:00:53.220
+You should see the changed[br]values in the response.
+
+0:00:53.220,0:00:55.810
+Once you're done,[br]check off the completed steps and
+
+0:00:55.810,0:00:57.150
+enter your appspot project ID.

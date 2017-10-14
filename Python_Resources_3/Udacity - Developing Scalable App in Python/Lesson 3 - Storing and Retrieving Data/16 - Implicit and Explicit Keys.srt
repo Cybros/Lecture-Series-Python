@@ -1,0 +1,95 @@
+0:00:00.690,0:00:04.480
+Welcome back. I hope that exercise went great.
+
+0:00:04.480,0:00:08.023
+Now, let's talk about another important Datastore concept,
+
+0:00:08.023,0:00:11.188
+keys. When you store an entity in the
+
+0:00:11.188,0:00:14.100
+Datastore, the Datastore will assign a key to
+
+0:00:14.100,0:00:18.030
+it. This key uniquely identifies the entity and
+
+0:00:18.030,0:00:20.380
+it's used for many different purposes. They are
+
+0:00:20.380,0:00:25.775
+two ways a key can be generated. Let's take a look. The first one is when
+
+0:00:25.775,0:00:29.480
+Datastore automatically generates this key. Let's say we
+
+0:00:29.480,0:00:32.970
+define the profile kind with these properties. And inserted
+
+0:00:32.970,0:00:35.660
+it for the first time. In this case, the
+
+0:00:35.660,0:00:39.080
+Datastore will automatically assign a key value to it.
+
+0:00:39.080,0:00:44.970
+The other way is that you specify what is called a key name or ID. In this case,
+
+0:00:44.970,0:00:48.440
+Datastore will use that value to generate the key.
+
+0:00:48.440,0:00:50.870
+This is a good alternative when you have something
+
+0:00:50.870,0:00:53.900
+that is unique for each entity. Because it can clearly
+
+0:00:53.900,0:00:56.560
+take us to our front entity based on this value
+
+0:00:56.560,0:01:00.235
+so it's easier to find. But observe that statement. The
+
+0:01:00.235,0:01:04.610
+Keyname/ID must be unique for all entities of that kind. For
+
+0:01:04.610,0:01:07.450
+our profile kind that is exactly the case because we
+
+0:01:07.450,0:01:09.980
+have decided to use the user ID to to uniquely
+
+0:01:09.980,0:01:13.820
+identify each profile identity. The value of having user ID
+
+0:01:13.820,0:01:16.360
+as the key name is that we can retrieve the profile
+
+0:01:16.360,0:01:20.310
+entity directly using this value. And remember, since the
+
+0:01:20.310,0:01:23.500
+user object is the first parameter to cloud endpoints API
+
+0:01:23.500,0:01:25.950
+methods. It will become a convenient way to get
+
+0:01:25.950,0:01:29.720
+the profile, but we'll look more into this later. If
+
+0:01:29.720,0:01:32.770
+you are familiar with relational database modeling, you probably
+
+0:01:32.770,0:01:35.100
+see that this is very similar to the concept of
+
+0:01:35.100,0:01:39.110
+a primary key. There, as well as with Datastore,
+
+0:01:39.110,0:01:41.490
+you have the option of letting the database generate the
+
+0:01:41.490,0:01:44.460
+primary key or use the value of your choice.
+
+0:01:44.460,0:01:46.620
+But now, it's for you to do some work

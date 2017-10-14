@@ -1,0 +1,110 @@
+0:00:00.370,0:00:02.740
+Alright. Let's have something more concrete to work
+
+0:00:02.740,0:00:07.230
+on. If you've organized events, you've probably used sites
+
+0:00:07.230,0:00:10.530
+like [UNKNOWN] or eventbrite.com. Well, let's say you wanted
+
+0:00:10.530,0:00:13.670
+to create an app to organize conferences. That type
+
+0:00:13.670,0:00:15.720
+of application would need to support at least the
+
+0:00:15.720,0:00:18.790
+following. A user can register, a user can create
+
+0:00:18.790,0:00:22.660
+conferences. Users can attend conferences. And of course, it
+
+0:00:22.660,0:00:25.720
+needs to be accessible both from the browser and
+
+0:00:25.720,0:00:28.425
+the mobile device. Well, we're going to create such an
+
+0:00:28.425,0:00:31.480
+application. And it's going to be called Conference Central. And
+
+0:00:31.480,0:00:33.800
+you're tasked to build it. And since it needs
+
+0:00:33.800,0:00:37.550
+to support multiple backends, you will use Cloud Endpoints to
+
+0:00:37.550,0:00:41.100
+create this application. Let's get started with Conference Central,
+
+0:00:41.100,0:00:45.130
+by having you download the skeleton code. Now, let's
+
+0:00:45.130,0:00:47.600
+take a quick tour of the completed Conference Central
+
+0:00:47.600,0:00:50.700
+application that you will build. But before we do that,
+
+0:00:50.700,0:00:53.710
+let's do a quick demo of the finished application. As
+
+0:00:53.710,0:00:56.330
+you can see, you're presented with a very nice landing
+
+0:00:56.330,0:00:59.200
+page for Conference Central. And if we scroll down, you
+
+0:00:59.200,0:01:02.730
+can see options to view conferences. Create conferences and update your
+
+0:01:02.730,0:01:06.990
+profile. But, before that, let's sign into the application. Sign
+
+0:01:06.990,0:01:09.910
+in, we'll use Google Plus sign in. Once we are signed
+
+0:01:09.910,0:01:13.230
+into the application, we can start to explore the functionality.
+
+0:01:13.230,0:01:15.970
+I can, for example, go to my profile where my personal
+
+0:01:15.970,0:01:19.640
+information is stored. I can also show the registered
+
+0:01:19.640,0:01:22.870
+conferences. So here you can see the name of the
+
+0:01:22.870,0:01:25.090
+conference. The city where it will be in. The
+
+0:01:25.090,0:01:28.950
+start date, organizer, how many people are registered to conference.
+
+0:01:28.950,0:01:31.650
+And how many tickets are available to the conference.
+
+0:01:31.650,0:01:34.970
+You can also query for different conferences. For example, the
+
+0:01:34.970,0:01:37.100
+ones you've created. Or the ones that you will
+
+0:01:37.100,0:01:41.120
+attend. You can also query by other types of properties.
+
+0:01:41.120,0:01:44.650
+And you can view the details for a conference. You can also of
+
+0:01:44.650,0:01:47.329
+course, create new conferences. Well that's an
+
+0:01:47.329,0:01:50.030
+overview of Conference Central. The application that
+
+0:01:50.030,0:01:53.660
+you will build and run in the Google Cloud. Now it's time for
+
+0:01:53.660,0:01:58.290
+you to do some work and get you started building Conference Central. Good luck.

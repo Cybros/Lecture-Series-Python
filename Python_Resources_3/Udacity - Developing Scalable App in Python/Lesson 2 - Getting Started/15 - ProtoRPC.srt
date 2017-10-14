@@ -1,0 +1,95 @@
+0:00:00.034,0:00:03.340
+Looking backup at the top[br]of helloworld_api.py,
+
+0:00:03.340,0:00:06.807
+you'll see these imports[br]from the protorpc library.
+
+0:00:06.807,0:00:09.582
+Now, protorpc is a tool kit for[br]building APIs and
+
+0:00:09.582,0:00:12.847
+it uses Google's protocol[br]buffers as a message format.
+
+0:00:12.847,0:00:16.617
+Protocol buffers or proto buff to its[br]friends is an efficient data format that
+
+0:00:16.617,0:00:19.575
+can be used through lots and[br]lots of programming languages,
+
+0:00:19.575,0:00:21.322
+including Python and JavaScript.
+
+0:00:21.322,0:00:25.159
+Now, unlike Python itself,[br]protobuf is statically typed.
+
+0:00:25.159,0:00:28.562
+Every message and[br]every field has a declared class.
+
+0:00:28.562,0:00:31.956
+That means that you'll see a lot[br]of type information in APIs and
+
+0:00:31.956,0:00:33.567
+messages that use protobuf.
+
+0:00:33.567,0:00:36.716
+And a lot of the syntax that you'll[br]see in endpoints APIs has to do with
+
+0:00:36.716,0:00:37.271
+protobuf.
+
+0:00:37.271,0:00:41.475
+For instance, in protobuf,[br]every field in the message has a number.
+
+0:00:41.475,0:00:44.779
+These messages has only one field,[br]so that field is number one.
+
+0:00:44.779,0:00:48.228
+But messages with several fields[br]will have their numbered one, two,
+
+0:00:48.228,0:00:49.050
+three and so on.
+
+0:00:49.050,0:00:52.686
+The classes that fields can have[br]are listed in the ProtoRPC field classes
+
+0:00:52.686,0:00:55.856
+documentation, which is linked[br]in the Instructor's Notes.
+
+0:00:55.856,0:00:58.259
+Also, every field has a name.
+
+0:00:58.259,0:01:00.594
+That's what we see here[br]in the Hello class.
+
+0:01:00.594,0:01:02.263
+The name of the field is greeting.
+
+0:01:02.263,0:01:05.733
+It's type is messages.Stringfield and[br]one is its number.
+
+0:01:05.733,0:01:08.402
+Protobuf also has a concept[br]of nested messages.
+
+0:01:08.402,0:01:12.797
+A field inside one type can be, instead[br]of a basic type like String or Boolean,
+
+0:01:12.797,0:01:14.608
+it can be another message type.
+
+0:01:14.608,0:01:18.712
+Since we're going to be seeing a lot of[br]these protobuf things, let's do a quiz.
+
+0:01:18.712,0:01:20.114
+Here are some Python variables.
+
+0:01:20.114,0:01:23.818
+And over here is the outline for[br]protobuf message class.
+
+0:01:23.818,0:01:27.762
+Now take a look on the messages module[br]documentation in the instructor notes
+
+0:01:27.762,0:01:31.829
+for a list of the field classes, then[br]fill in the appropriate class definition
+
+0:01:31.829,0:01:33.450
+for each field in the message.

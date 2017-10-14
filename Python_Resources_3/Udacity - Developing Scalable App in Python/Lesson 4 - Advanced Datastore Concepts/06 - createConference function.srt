@@ -1,0 +1,41 @@
+0:00:00.240,0:00:02.029
+Run your app on local host and
+
+0:00:02.029,0:00:05.230
+then use the API's explorer[br]to create a conference.
+
+0:00:05.230,0:00:08.530
+And then go to the Admin console to[br]check that the conference was created
+
+0:00:08.530,0:00:09.710
+as expected.
+
+0:00:09.710,0:00:13.190
+You can also use the create conference[br]page in the app to create and
+
+0:00:13.190,0:00:14.350
+save a conference.
+
+0:00:14.350,0:00:17.010
+The conference will be created[br]because the conference page sends
+
+0:00:17.010,0:00:20.120
+a call to the Save Conference function[br]which you've now implemented.
+
+0:00:20.120,0:00:22.290
+But the Show Conferences[br]page will not yet
+
+0:00:22.290,0:00:25.305
+work because you have not yet[br]implemented the function that it calls,
+
+0:00:25.305,0:00:28.310
+the functions to query[br]an output conference records.
+
+0:00:28.310,0:00:31.700
+So no matter whether you create your[br]conference in the API's explorer or
+
+0:00:31.700,0:00:34.800
+in the Create Conference page, you'll[br]need to use the data store viewer and
+
+0:00:34.800,0:00:37.140
+the Admin console to check that[br]the conference got created.

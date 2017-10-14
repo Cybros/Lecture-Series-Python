@@ -1,0 +1,32 @@
+0:00:00.290,0:00:01.830
+So if we look through the documentation,
+
+0:00:01.830,0:00:04.590
+we'll see that StringProperty[br]is indexed by default.
+
+0:00:04.590,0:00:06.140
+TextProperty is not.
+
+0:00:06.140,0:00:07.860
+DateTimeProperty is.
+
+0:00:07.860,0:00:10.810
+BlobProperty is not, and[br]JsonProperty is not.
+
+0:00:10.810,0:00:12.970
+The only tricky one here[br]is DateTimeProperty,
+
+0:00:12.970,0:00:16.129
+where it doesn't explicitly say in[br]the docs if it's indexed or not.
+
+0:00:16.129,0:00:18.620
+But since the default[br]behavior is indexed for all,
+
+0:00:18.620,0:00:20.170
+we can assume it's indexed.
+
+0:00:20.170,0:00:21.990
+You can also look at your datastore and
+
+0:00:21.990,0:00:24.479
+see that you have Date/Time[br]values with an index.

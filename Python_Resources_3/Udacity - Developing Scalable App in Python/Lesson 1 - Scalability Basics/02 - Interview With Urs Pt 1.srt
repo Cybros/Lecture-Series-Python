@@ -1,0 +1,83 @@
+0:00:00.860,0:00:03.400
+So we're sitting here with Urs Hölzle, Senior
+
+0:00:03.400,0:00:07.220
+Vice President of Infrastructure here at Google. Urs, could
+
+0:00:07.220,0:00:09.580
+you briefly describe your role here at Google
+
+0:00:09.580,0:00:13.510
+and why Google has all of these data centers?
+
+0:00:13.510,0:00:16.219
+>> I am responsible for technical infrastructure at Google
+
+0:00:16.219,0:00:18.370
+and that's the team that builds all the data
+
+0:00:18.370,0:00:23.250
+centers, network servers, software systems that runs our internal
+
+0:00:23.250,0:00:26.490
+cloud and we built that a long time ago
+
+0:00:26.490,0:00:28.220
+for our own needs. And we have very large
+
+0:00:28.220,0:00:31.820
+scale applications and so we needed a very capable cloud.
+
+0:00:31.820,0:00:35.130
+And now we're making that cloud available to everyone
+
+0:00:35.130,0:00:40.070
+through App Engine, Compute Engine, and our Cloud Platform overall.
+
+0:00:40.070,0:00:43.358
+>> Urs, so what excites you about Google Cloud Platform and
+
+0:00:43.358,0:00:47.570
+App Engine in particular, which is the focus of this course?
+
+0:00:47.570,0:00:49.392
+>> What's great about the Google Cloud Platform
+
+0:00:49.392,0:00:52.060
+is, is really, one, that we can make our
+
+0:00:52.060,0:00:56.430
+great internal infrastructure accessible to every developer out there.
+
+0:00:56.430,0:00:59.170
+And then, in the Cloud Platform, App Engine is
+
+0:00:59.170,0:01:02.220
+really the, that, that one system that makes it
+
+0:01:02.220,0:01:05.379
+really easier for you to start very small. And then
+
+0:01:05.379,0:01:09.560
+scale to a very large user base. So that
+
+0:01:09.560,0:01:11.990
+if you have a game that suddenly becomes popular,
+
+0:01:11.990,0:01:14.970
+our back-end and our front-end is going to scale with
+
+0:01:14.970,0:01:17.190
+you. And you don't really have to change your application
+
+0:01:17.190,0:01:20.080
+very much. And that's rare to see in infrastructure. Usually
+
+0:01:20.080,0:01:22.310
+you have to do the hard work up front. Now, with
+
+0:01:22.310,0:01:24.440
+App Engine, you kind of don't really have to do the
+
+0:01:24.440,0:01:26.660
+hard work at all because we can do it for you.

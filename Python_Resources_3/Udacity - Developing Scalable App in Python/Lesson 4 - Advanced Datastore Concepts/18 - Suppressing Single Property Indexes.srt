@@ -1,0 +1,29 @@
+0:00:00.230,0:00:03.320
+In NDB,[br]most properties are indexed by default.
+
+0:00:03.320,0:00:05.470
+If your entities have[br]a lot of properties,
+
+0:00:05.470,0:00:09.220
+indexes can take up a lot more[br]space than the entities themselves.
+
+0:00:09.220,0:00:13.835
+Unindexed properties also cost fewer[br]write ops than indexed properties.
+
+0:00:13.835,0:00:17.925
+If you want to disable indexing for[br]specific properties, to save some space
+
+0:00:17.925,0:00:22.155
+in Datastore, you can explicitly disable[br]indexing when you declare a property.
+
+0:00:22.155,0:00:27.905
+To do this, when you declare the[br]property, you'll just add indexed=False.
+
+0:00:27.905,0:00:30.647
+And, take a look at the documentation[br]for NDB Property Types,
+
+0:00:30.647,0:00:32.473
+which is linked in the Instructor Notes.
+
+0:00:32.473,0:00:36.515
+And, find out which of the following[br]types are not indexed by default

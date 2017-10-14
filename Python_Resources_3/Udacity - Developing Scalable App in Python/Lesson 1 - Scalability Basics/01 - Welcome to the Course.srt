@@ -1,0 +1,53 @@
+0:00:00.600,0:00:01.500
+Hi there.
+
+0:00:01.500,0:00:03.670
+>> Hi, and welcome to our[br]course on building scaleable
+
+0:00:03.670,0:00:05.440
+applications in Python.
+
+0:00:05.440,0:00:08.200
+>> My name is Magnus, and I work at[br]Google, with cloud technologies.
+
+0:00:08.200,0:00:11.010
+>> And I'm Karl,[br]I'm a course developer at Udacity.
+
+0:00:11.010,0:00:14.290
+>> Together we will teach you how[br]to build great applications that
+
+0:00:14.290,0:00:15.980
+run on Google infrastructure.
+
+0:00:15.980,0:00:16.900
+And that can scale.
+
+0:00:16.900,0:00:17.630
+>> And scale.
+
+0:00:17.630,0:00:18.480
+>> And scale.
+
+0:00:18.480,0:00:19.190
+>> And scale.
+
+0:00:19.190,0:00:20.310
+>> And scale.
+
+0:00:20.310,0:00:23.620
+>> Because at Google people really do[br]know how to build scalable systems.
+
+0:00:23.620,0:00:26.790
+>> That's right and after this[br]course you will also be able to
+
+0:00:26.790,0:00:30.710
+write scalable applications that[br]run in the Google data centers.
+
+0:00:30.710,0:00:34.370
+I will be teaching you the theory[br]behind building scalable applications.
+
+0:00:34.370,0:00:36.790
+>> And I'll be showing you how[br]to implement them in Python.
+
+0:00:36.790,0:00:39.020
+So with that why don't we get[br]right into our first lesson.

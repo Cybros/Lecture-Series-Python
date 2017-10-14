@@ -1,0 +1,149 @@
+0:00:00.000,0:00:02.241
+Next, you'll learn about[br]querying conferences and
+
+0:00:02.241,0:00:04.490
+it's helpful to have several[br]conferences to query.
+
+0:00:04.490,0:00:06.545
+So, I'm going to create a few and[br]you can do the same.
+
+0:00:06.545,0:00:10.375
+So the only required field for a[br]conference is Name, but we'll generally
+
+0:00:10.375,0:00:14.221
+specify other fields, so that we have[br]more interesting things to query.
+
+0:00:14.221,0:00:17.902
+So far, we haven't an implement that[br]any functionality to true conferences.
+
+0:00:17.902,0:00:21.486
+We can use the data store admin[br]interface to check that our conferences
+
+0:00:21.486,0:00:22.224
+got created.
+
+0:00:22.224,0:00:25.789
+Next, will be implementing the query[br]conferences function to get conferences.
+
+0:00:25.789,0:00:28.975
+You already know how to get an entity[br]out of the datastore by key,
+
+0:00:28.975,0:00:31.276
+but for conferences,[br]we don't know the key,
+
+0:00:31.276,0:00:33.766
+because we let app engine[br]allocate the key for us.
+
+0:00:33.766,0:00:35.728
+So we'll be querying for conferences.
+
+0:00:35.728,0:00:38.342
+So, one thing you can do[br]is you can query by kind.
+
+0:00:38.342,0:00:40.687
+In which case,[br]you'll get all entities of that kind.
+
+0:00:40.687,0:00:45.124
+Note that this q here, this variable[br]is actually a query object and
+
+0:00:45.124,0:00:46.875
+not the result of a query.
+
+0:00:46.875,0:00:50.381
+To fetch a single result out of[br]a query object, you call q.get.
+
+0:00:50.381,0:00:53.075
+To fetch all the results,[br]you call q.fetch.
+
+0:00:53.075,0:00:57.161
+And to fetch say, only five results,[br]you called q.fetch 5.
+
+0:00:57.161,0:01:01.424
+You can also use a query object[br]as a standard iterator in Python.
+
+0:01:01.424,0:01:05.367
+Another thing you can do is put an order[br]on the query instance by naming
+
+0:01:05.367,0:01:06.601
+a particular field.
+
+0:01:06.601,0:01:09.507
+You can also add filters[br]before you fetch the results.
+
+0:01:09.507,0:01:13.667
+So for instance, if we wanted to fetch[br]only conferences occurring in February,
+
+0:01:13.667,0:01:15.207
+we could do it just like that.
+
+0:01:15.207,0:01:18.396
+So let's first, implement this simple[br]way to display all conferences and
+
+0:01:18.396,0:01:21.140
+worry about the filters later when[br]you get this first step done.
+
+0:01:21.140,0:01:24.650
+First, you will need to add a new end[br]point definition for query conferences.
+
+0:01:24.650,0:01:28.322
+And as you hopefully remember from[br]the getProfile on setProfile endpoints,
+
+0:01:28.322,0:01:31.836
+you'll need ProtoRPC message classes for[br]the request and the response.
+
+0:01:31.836,0:01:33.741
+There are some big differences, though.
+
+0:01:33.741,0:01:37.096
+With get and set profile, you're[br]always working with just one entity,
+
+0:01:37.096,0:01:38.146
+one user's profile.
+
+0:01:38.146,0:01:40.142
+But when you're dealing[br]with conferences,
+
+0:01:40.142,0:01:43.406
+you can have several filters and a query[br]can return a list of conferences.
+
+0:01:43.406,0:01:47.126
+So you already have an outgoing[br]ConferenceForm ProtoRPC message class
+
+0:01:47.126,0:01:48.433
+for single conference.
+
+0:01:48.433,0:01:52.106
+But since you need to send several[br]conferences, we'll also need
+
+0:01:52.106,0:01:55.863
+a ConferenceForms message with[br]a repeated field to contain them.
+
+0:01:55.863,0:01:57.569
+The same applies to query filters.
+
+0:01:57.569,0:02:00.657
+A single filter will go into[br]ConferenceQueryForm and
+
+0:02:00.657,0:02:03.549
+several in ConferenceQueryForms for[br]response.
+
+0:02:03.549,0:02:06.012
+So, I've provided some code[br]to help you implement this.
+
+0:02:06.012,0:02:10.541
+Take a look in lesson slash four[br]Additions in the files marked TODO_2.
+
+0:02:10.541,0:02:14.186
+After you've successfully implemented[br]the query conference's endpoint,
+
+0:02:14.186,0:02:16.666
+you should both be able to use[br]it in the APS explorer and
+
+0:02:16.666,0:02:19.609
+in the web front-end as well as[br]long as you don't use filters.
+
+0:02:19.609,0:02:22.323
+So check off each of these[br]steps as you complete them and
+
+0:02:22.323,0:02:23.740
+then put in your app ID here.

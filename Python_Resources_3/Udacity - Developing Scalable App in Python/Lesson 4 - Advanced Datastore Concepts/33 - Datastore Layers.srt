@@ -1,0 +1,26 @@
+0:00:00.910,0:00:03.900
+This is a sandwich. It's not a regular
+
+0:00:03.900,0:00:06.050
+sandwich. It's a little bit bigger than the
+
+0:00:06.050,0:00:10.210
+regular sandwich, but it looks delicious. So why
+
+0:00:10.210,0:00:13.150
+am I telling you this? Well, datastore is like
+
+0:00:13.150,0:00:16.610
+a sandwich. It has layers, each layer built
+
+0:00:16.610,0:00:20.250
+on top of the other for support. We have
+
+0:00:20.250,0:00:23.690
+covered a lot of layers in lesson four
+
+0:00:23.690,0:00:26.080
+and we only have two more layers to cover.
+
+0:00:26.080,0:00:30.270
+So, keep the good work up. As for me, I'm eating a sandwich.

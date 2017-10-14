@@ -1,0 +1,38 @@
+0:00:00.000,0:00:03.337
+Now let's take a look around[br]the code repository for this course.
+
+0:00:03.337,0:00:04.752
+We have provided some examples and
+
+0:00:04.752,0:00:06.907
+scaffolding for[br]the main app you'll be working on.
+
+0:00:06.907,0:00:10.462
+Follow the link in the Instruction Notes[br]to get the course code repository
+
+0:00:10.462,0:00:11.046
+on GitHub.
+
+0:00:11.046,0:00:15.127
+From there, you can choose either[br]to clone the repository or
+
+0:00:15.127,0:00:17.218
+just download it as a zip file.
+
+0:00:17.218,0:00:19.620
+You can see that there are folders for[br]each of the lessons.
+
+0:00:19.620,0:00:22.656
+We'll provide you with the starting[br]code for all of the exercises.
+
+0:00:22.656,0:00:26.215
+All the exercises build on the previous[br]ones, so you can start with the first
+
+0:00:26.215,0:00:29.397
+one and continue working on your[br]version until the end of the class.
+
+0:00:29.397,0:00:32.049
+Or you can grab the starting code for[br]a particular exercise and
+
+0:00:32.049,0:00:33.020
+continue from there.

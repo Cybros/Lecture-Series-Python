@@ -1,0 +1,110 @@
+0:00:00.280,0:00:03.469
+Magnus has talked to you about[br]querying by kind, and by property.
+
+0:00:03.469,0:00:07.450
+In the previous exercise, you practiced[br]querying for all entities of a kind.
+
+0:00:07.450,0:00:11.300
+The next step is to write the code to[br]filter the search results by property
+
+0:00:11.300,0:00:12.100
+values.
+
+0:00:12.100,0:00:15.580
+For example, you could find all[br]of the conferences whose city
+
+0:00:15.580,0:00:17.400
+property has the value London.
+
+0:00:17.400,0:00:20.170
+If we did that in code,[br]it would look like this.
+
+0:00:20.170,0:00:22.040
+Or if you want to be more[br]flexible with filters,
+
+0:00:22.040,0:00:23.940
+you can build a filter like this.
+
+0:00:23.940,0:00:27.820
+You can set a field,[br]an operator, and a value.
+
+0:00:27.820,0:00:32.820
+Build a FilterNode object,[br]using that field, operator and values.
+
+0:00:32.820,0:00:34.460
+And attach it to the query.
+
+0:00:34.460,0:00:36.720
+To practice filtering[br]queries by property,
+
+0:00:36.720,0:00:40.330
+you're going to add a function[br]to the conference API class.
+
+0:00:40.330,0:00:42.945
+You can call this function whatever[br]you like, maybe something like,
+
+0:00:42.945,0:00:44.140
+filterPlayground.
+
+0:00:44.140,0:00:46.850
+The name doesn't matter because[br]the function isn't called by the UI.
+
+0:00:46.850,0:00:49.418
+You're only going to use it[br]within the APIs Explorer.
+
+0:00:49.418,0:00:53.168
+You'll be using this method to[br]experiment and explore setting filters.
+
+0:00:53.168,0:00:56.255
+You can think of it as a playground[br]method for exploring queries.
+
+0:00:56.255,0:00:58.670
+FilterPlayground doesn't[br]take any arguments.
+
+0:00:58.670,0:01:00.930
+So the request type[br]will be void message.
+
+0:01:00.930,0:01:04.890
+And as for the response, well we're[br]returning multiple conferences, so
+
+0:01:04.890,0:01:07.330
+the response type will[br]be conference forms.
+
+0:01:07.330,0:01:10.840
+So, define this function to create[br]a query to get all conferences
+
+0:01:10.840,0:01:13.075
+where the city property[br]has the value London.
+
+0:01:13.075,0:01:16.740
+Run the app on local host, and[br]use the APIs Explorer to test it.
+
+0:01:16.740,0:01:19.660
+Look for the new function name in[br]the list of functions available in
+
+0:01:19.660,0:01:20.970
+the conference service.
+
+0:01:20.970,0:01:24.160
+You won't be able to test your new[br]function in the conference center UI
+
+0:01:24.160,0:01:26.333
+because nothing in the UI[br]calls your function.
+
+0:01:26.333,0:01:29.812
+You can also find sample code[br]in Lesson_4 > Additions >
+
+0:01:29.812,0:01:35.000
+TODO_4_conference.py, including some[br]detailed instructions on how to use it.
+
+0:01:35.000,0:01:38.543
+Now once you get this to work for[br]conferences whose city is London,
+
+0:01:38.543,0:01:41.708
+add another filter on[br]the conferences.topics field, for
+
+0:01:41.708,0:01:43.685
+the string Medical Innovations.
+
+0:01:43.685,0:01:46.755
+Check each one of these boxes as[br]you progress through this exercise.

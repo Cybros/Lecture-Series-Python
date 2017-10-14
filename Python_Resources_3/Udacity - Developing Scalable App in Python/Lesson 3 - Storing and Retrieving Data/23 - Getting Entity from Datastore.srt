@@ -1,0 +1,68 @@
+0:00:00.000,0:00:00.781
+So right now,
+
+0:00:00.781,0:00:04.834
+the saveProfile method only returns[br]a profile without really saving it.
+
+0:00:04.834,0:00:09.217
+And the getProfile from user function[br]will change all of the fields back to
+
+0:00:09.217,0:00:10.778
+the defaults every time.
+
+0:00:10.778,0:00:13.946
+That means that if we use it from the[br]front-end every time we'd have to fill
+
+0:00:13.946,0:00:15.979
+in the correct values to[br]replace the defaults.
+
+0:00:15.979,0:00:20.400
+Instead, we probably want to get the[br]existing entity from the datastore and
+
+0:00:20.400,0:00:22.550
+maybe just update one field not all.
+
+0:00:22.550,0:00:26.760
+So the getProfileFromUser function[br]should actually get a saved profile from
+
+0:00:26.760,0:00:27.666
+the datastore,
+
+0:00:27.666,0:00:31.048
+instead of always creating a new[br]one from the default values.
+
+0:00:31.048,0:00:32.418
+Let's see how to do that.
+
+0:00:32.418,0:00:34.352
+Getting an entity from the datastore,
+
+0:00:34.352,0:00:36.760
+if you know the entity's[br]key is extremely easy.
+
+0:00:36.760,0:00:40.475
+You just perform get[br]on the key like this.
+
+0:00:40.475,0:00:42.750
+So now,[br]it's your turn to do this in your app.
+
+0:00:42.750,0:00:46.364
+Since you're already creating the[br]profile key, all you need to do is get
+
+0:00:46.364,0:00:49.693
+the entity from the datastore[br]instead of defining that it's not.
+
+0:00:49.693,0:00:52.540
+And then in doProfile,[br]if you get a save_request,
+
+0:00:52.540,0:00:55.985
+we also want to put the modified[br]profile back to the datastore.
+
+0:00:55.985,0:00:59.607
+And of course, don't forget to deploy[br]your app to local host and test.
+
+0:00:59.607,0:01:02.170
+So, as you complete each one[br]of these check them off and
+
+0:01:02.170,0:01:05.430
+then fill in this missing code to[br]fetch a profile from the datastore.

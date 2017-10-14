@@ -1,0 +1,47 @@
+0:00:00.240,0:00:03.140
+Now it's time to start working on[br]the Conference Central application.
+
+0:00:03.140,0:00:07.150
+Hopefully you've already cloned or[br]downloaded the code from our repository
+
+0:00:07.150,0:00:11.250
+but if not just follow the link in[br]the instructor notes and do so now.
+
+0:00:11.250,0:00:13.455
+We provide starting code for[br]each lesson.
+
+0:00:13.455,0:00:15.575
+You can start with the code for[br]this lesson and
+
+0:00:15.575,0:00:19.155
+keep working on it throughout the[br]course, or, at any point, if you need,
+
+0:00:19.155,0:00:21.765
+you can download the starting code for[br]the lesson that you're in.
+
+0:00:21.765,0:00:23.015
+You might want to do that, for example,
+
+0:00:23.015,0:00:26.427
+if you don't finish all the coding[br]exercises for a previous lesson.
+
+0:00:26.427,0:00:30.325
+As you can see the project layout is[br]similar to the hello endpoints project.
+
+0:00:30.325,0:00:31.817
+There are some more static files for
+
+0:00:31.817,0:00:35.272
+the front end however and the backend[br]is split up into several files.
+
+0:00:35.272,0:00:39.153
+Settings.py for the project specific[br]configuration to web client idea.
+
+0:00:39.153,0:00:44.248
+Models.py for the ndb model, and[br]protorpc message definitions.
+
+0:00:44.248,0:00:48.415
+Conference.py for the main application[br]logic, and app.yaml provides
+
+0:00:48.415,0:00:52.057
+the application settings,[br]same as in the hello endpoints app.

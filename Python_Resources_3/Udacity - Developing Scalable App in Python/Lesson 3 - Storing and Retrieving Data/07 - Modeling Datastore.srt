@@ -1,0 +1,35 @@
+0:00:00.510,0:00:03.230
+A Team is probably best modeled as a Kind.
+
+0:00:04.310,0:00:07.460
+It's a concrete structure that can have many entities.
+
+0:00:07.460,0:00:10.380
+A Game is also best modeled as a Kind,
+
+0:00:10.380,0:00:13.500
+for the same reasons as for Team. The Winning
+
+0:00:13.500,0:00:16.590
+Team is probably best modeled as an Entity. But,
+
+0:00:16.590,0:00:18.840
+this answer is not so straightforward. It could, for
+
+0:00:18.840,0:00:22.480
+example, be a Property Value in an Entity. A
+
+0:00:22.480,0:00:25.520
+Player is probably best modeled as a Kind for
+
+0:00:25.520,0:00:29.910
+the same reasons as Team and Game. And, the Player Name sounds
+
+0:00:29.910,0:00:33.800
+like it's modeled through a Property Value. I hope you did well on
+
+0:00:33.800,0:00:38.320
+the quiz. All right, that's an introduction to DataStore. Now, it's about time
+
+0:00:38.320,0:00:41.880
+to check out some code, don't you think? Let's do that. Good luck.

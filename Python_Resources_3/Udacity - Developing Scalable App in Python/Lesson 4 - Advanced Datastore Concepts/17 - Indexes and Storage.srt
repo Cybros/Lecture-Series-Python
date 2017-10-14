@@ -1,0 +1,65 @@
+0:00:00.740,0:00:03.040
+So now when we have introduced indexes, let's
+
+0:00:03.040,0:00:05.550
+talk about the size of these index tables,
+
+0:00:05.550,0:00:07.430
+since this is important to be aware of
+
+0:00:07.430,0:00:12.190
+when you build datastore applications. Using the developer console,
+
+0:00:12.190,0:00:14.090
+you can see the index sizes under the
+
+0:00:14.090,0:00:18.260
+datastore dashboard page. Here, we display the dashboard for
+
+0:00:18.260,0:00:21.060
+a very simple application. And as you can
+
+0:00:21.060,0:00:25.187
+see, the entities themselves do take up 6.75 kilobytes.
+
+0:00:25.187,0:00:28.840
+However, the built-in indexes for those entities, they
+
+0:00:28.840,0:00:32.960
+take up 57.12 kilobytes. This is actually a
+
+0:00:32.960,0:00:35.920
+common scenario. Indexes very often take up more
+
+0:00:35.920,0:00:38.280
+space than the storage required just to store
+
+0:00:38.280,0:00:41.860
+the entities. The built-in indexes are the indexes
+
+0:00:41.860,0:00:43.750
+that are generated for each of the individual
+
+0:00:43.750,0:00:46.482
+properties, as we talked about for the conference
+
+0:00:46.482,0:00:50.130
+city property. There's also something called composite indexes,
+
+0:00:50.130,0:00:54.820
+but we'll talk about those shortly. As you can see, if you let data store
+
+0:00:54.820,0:01:00.050
+maintain an index for each individual property, it can take up a lot of space.
+
+0:01:00.050,0:01:02.570
+Therefore, it's important to think about which
+
+0:01:02.570,0:01:04.920
+properties you need to query on. So you
+
+0:01:04.920,0:01:08.050
+only generate indexes for those. Let's look at
+
+0:01:08.050,0:01:09.690
+how you can control that in your code.

@@ -1,0 +1,11 @@
+0:00:00.120,0:00:02.230
+So if you followed each of these steps,
+
+0:00:02.230,0:00:04.620
+then the result should be[br]that you get an error.
+
+0:00:04.620,0:00:06.430
+Now let's take a look at[br]what that error means, and
+
+0:00:06.430,0:00:07.380
+see what we should do about it.

@@ -1,0 +1,29 @@
+0:00:00.250,0:00:02.000
+So, regardless of how we fetch it,
+
+0:00:02.000,0:00:05.528
+list of ten conference keys is going to[br]take up the same amount of space.
+
+0:00:05.528,0:00:09.030
+But using get_multi to fetch a list of[br]keys does only one request to the app
+
+0:00:09.030,0:00:10.050
+engine datastore.
+
+0:00:10.050,0:00:13.940
+Whereas calling the get method on lots[br]of keys would do lots of requests.
+
+0:00:13.940,0:00:16.251
+So, this isn't just[br]a matter of personal style.
+
+0:00:16.251,0:00:19.110
+Using get_multi is actually more[br]efficient because it does fewer
+
+0:00:19.110,0:00:20.310
+requests.
+
+0:00:20.310,0:00:22.630
+And don't take my word for[br]it, look in the docs.
+
+0:00:22.630,0:00:24.180
+You'll find a link in[br]the instructor notes.

@@ -1,0 +1,185 @@
+0:00:00.370,0:00:03.080
+Now we're going to cover another area important to
+
+0:00:03.080,0:00:05.530
+use when you're writing data, we're going to talk
+
+0:00:05.530,0:00:08.640
+about transactions. Let's go back and look at a
+
+0:00:08.640,0:00:11.780
+user registering to attend a conference for example. As
+
+0:00:11.780,0:00:15.340
+you may recall, we previously introduced an ancestor relationship
+
+0:00:15.340,0:00:18.820
+between a profile and conference where the profile that
+
+0:00:18.820,0:00:22.450
+created a conference was the ancestor to the conference.
+
+0:00:22.450,0:00:25.650
+We will now introduce a "has-a" relationship between profile and
+
+0:00:25.650,0:00:28.840
+conference where each profile entity will have a
+
+0:00:28.840,0:00:31.980
+list of conferences they will attend. We will call
+
+0:00:31.980,0:00:35.410
+this property "conferences to attend". In addition, we will
+
+0:00:35.410,0:00:38.210
+have a numeric counter in each conference entity which
+
+0:00:38.210,0:00:41.140
+specifies how many seats are still available, we
+
+0:00:41.140,0:00:44.230
+will call this property "seats available". So when a
+
+0:00:44.230,0:00:47.350
+user registers to attend a conference, the conference gets
+
+0:00:47.350,0:00:50.830
+added to conferences to attend and seats available gets
+
+0:00:50.830,0:00:54.020
+decremented by one. So going back to transactions, in
+
+0:00:54.020,0:00:57.370
+this case your application will perform two update operations
+
+0:00:57.370,0:01:00.890
+on two separate entities. So far, every data store
+
+0:01:00.890,0:01:04.510
+update operation we used have been independent of the other.
+
+0:01:04.510,0:01:07.640
+For example, the success or failure of put entity
+
+0:01:07.640,0:01:10.580
+1 and put entity 2 has been independent of
+
+0:01:10.580,0:01:12.910
+the success and failure of the other. This may
+
+0:01:12.910,0:01:15.850
+be okay in many situations but in many situations it
+
+0:01:15.850,0:01:18.920
+may also be completely unacceptable. So going back
+
+0:01:18.920,0:01:22.090
+to transactions, in this case your application will perform
+
+0:01:22.090,0:01:25.680
+two update operations on two separate entities. On the
+
+0:01:25.680,0:01:28.490
+profile entity, you will add the conference to the
+
+0:01:28.490,0:01:31.600
+conferences to attend property and on the conference
+
+0:01:31.600,0:01:35.190
+entity it will decrement the seats available counter. All
+
+0:01:35.190,0:01:38.600
+of these operations are performed independently in these diagram
+
+0:01:38.600,0:01:41.220
+right now, you may see that they are highly
+
+0:01:41.220,0:01:44.230
+dependent on each other. Imagine, for example, that
+
+0:01:44.230,0:01:46.370
+you have successfully added the conference to the
+
+0:01:46.370,0:01:50.520
+profile entity and then the unthinkable happens. Your
+
+0:01:50.520,0:01:54.300
+application needs to terminate for some reason. For example,
+
+0:01:54.300,0:01:56.140
+it runs out of memory and is faced
+
+0:01:56.140,0:01:59.840
+with a critical termination condition. In this case,
+
+0:01:59.840,0:02:02.990
+when your application restarts the profile entity will
+
+0:02:02.990,0:02:06.380
+have the conference registered to attend but the seats
+
+0:02:06.380,0:02:09.580
+available counter has not be decremented. This
+
+0:02:09.580,0:02:11.970
+means that there will be more users attending
+
+0:02:11.970,0:02:18.200
+than there are seats available. That is not good, we solve this problem by using
+
+0:02:18.200,0:02:20.920
+transactions. This is done by telling data
+
+0:02:20.920,0:02:24.040
+store to begin a transaction. Then you perform
+
+0:02:24.040,0:02:29.110
+your operations and finally, you commit your transaction.
+
+0:02:29.110,0:02:31.740
+If everything goes well, you have successfully performed
+
+0:02:31.740,0:02:34.545
+both update operations and the state of both
+
+0:02:34.545,0:02:38.510
+account have been updated. In transaction language, we call
+
+0:02:38.510,0:02:41.390
+this a commit forward. But if the unthinkable
+
+0:02:41.390,0:02:44.180
+happens and something goes wrong before we have successfully
+
+0:02:44.180,0:02:47.560
+executed the commit transaction statement then anything that
+
+0:02:47.560,0:02:50.700
+has been updated starting from the begin statement will
+
+0:02:50.700,0:02:54.250
+be undone, like it has never happened. For our
+
+0:02:54.250,0:02:56.980
+case that means that the seats available counter was
+
+0:02:56.980,0:02:59.550
+not decremented but it also means that
+
+0:02:59.550,0:03:01.980
+the conference was not added to the profile
+
+0:03:01.980,0:03:04.360
+entity. As you can see we have
+
+0:03:04.360,0:03:08.020
+created a mutual dependency between these statements. They
+
+0:03:08.020,0:03:13.470
+are either executed as a complete group or none of it gets done. Now the
+
+0:03:13.470,0:03:14.930
+time has come for you to add
+
+0:03:14.930,0:03:17.800
+transactions to conference central with a new exercise.

@@ -1,0 +1,14 @@
+0:00:00.350,0:00:03.770
+Now, when you have been introduced to some of the benefits of app engine,
+
+0:00:03.770,0:00:07.540
+let's do a little quiz. For which of the following could app engine be used
+
+0:00:07.540,0:00:12.490
+and benefit from its strengths? A news site like New York Times, a device
+
+0:00:12.490,0:00:16.620
+driver testing system, a personal portfolio site,
+
+0:00:16.620,0:00:19.140
+or a video game? Check all that apply.
