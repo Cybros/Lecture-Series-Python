@@ -1194,6 +1194,9 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [CherryPy](http://cherrypy.org/) - A minimalist Python web framework, HTTP/1.1-compliant and WSGI thread-pooled.
 * [Django](https://www.djangoproject.com/) - The most popular web framework in Python.
     * [awesome-django](https://github.com/rosarior/awesome-django)
+    * [django-girls-tutorial](https://tutorial.djangogirls.org/en/)
+    * [tango-with-django](http://www.tangowithdjango.com/)
+    * [the-django-book](https://djangobook.com/the-django-book/)
 * [Flask](http://flask.pocoo.org/) - A microframework for Python.
     * [awesome-flask](https://github.com/humiaozuzu/awesome-flask)
 * [Pyramid](https://pylonsproject.org/) - A small, fast, down-to-earth, open source Python web framework.
