@@ -12,6 +12,7 @@
    print x/y                  # it will give quotient when x is divided by y
    print x%y                  # it is modulo function and gives remainder when x is divied by y
    print x ** y               # it means x^y. it is way to represnt power operator
+   print x//y                 # Result of integer division truncated down both for positive and negative.
    
  3. single line comments can be given by putting # before a line
  
