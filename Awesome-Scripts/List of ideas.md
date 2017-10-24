@@ -36,4 +36,8 @@ It plays morse code (audio) depending on users' entered string.
 ### 14. The number game that insults you if you get it wrong with entries in a file.
 ### 15. [Bitcoin price tracker GUI](luno_btc_price.py)
 A GUI that shows Bitcoin price with a button that can refresh to the current price.
+### 16. [Torrent Renamer](torRenamer.py) 
+A file processing utility that flattens all folders in a directory and renames TV episodes to a specified file structure.
+It is a batch renamer, please be careful. There is a line you can comment out / comment in for simulation of the rename run!
+
 ~                    
