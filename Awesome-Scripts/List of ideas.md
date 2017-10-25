@@ -36,4 +36,6 @@ It plays morse code (audio) depending on users' entered string.
 ### 14. The number game that insults you if you get it wrong with entries in a file.
 ### 15. [Bitcoin price tracker GUI](luno_btc_price.py)
 A GUI that shows Bitcoin price with a button that can refresh to the current price.
+### 16. Welcome script for initial logon
+A script that will show the weather, top news from a selected news source, and a random inspirational quote.
 ~                    
