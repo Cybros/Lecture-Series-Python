@@ -24,7 +24,7 @@ class TestBasicMath(unittest.TestCase):
         del self._my_math
 
     def test_sum(self):
-        self.assertEqual(self.my_math.sum(2, 4), 6)
+        self.assertEqual(self.my_math.add(2, 4), 6)
 
     def test_mul(self):
         self.assertEqual(self.my_math.mul(6, 4), 24)
