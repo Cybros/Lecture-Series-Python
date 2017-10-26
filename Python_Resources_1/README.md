@@ -2096,3 +2096,5 @@ A curated list of awesome Python frameworks, libraries and software.
 * [linkedin/pyexchange](https://github.com/linkedin/pyexchange) - Python wrapper for Microsoft Exchange
 * [baudm/mplayer.py](https://github.com/baudm/mplayer.py) - Lightweight Python wrapper for MPlayer
 * [crummy.com/BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)  - One of the must-have tools for python web scraping!
+* [dvf/blockchain](https://github.com/dvf/blockchain) - A simple Blockchain in Python
+* [rg3/youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
