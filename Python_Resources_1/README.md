@@ -2098,3 +2098,4 @@ A curated list of awesome Python frameworks, libraries and software.
 * [crummy.com/BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)  - One of the must-have tools for python web scraping!
 * [dvf/blockchain](https://github.com/dvf/blockchain) - A simple Blockchain in Python
 * [rg3/youtube-dl](https://github.com/rg3/youtube-dl) - Command-line program to download videos from YouTube.com and other video sites
+* [apple/coremltools](https://github.com/apple/coremltools) - Converter tools for Core ML
