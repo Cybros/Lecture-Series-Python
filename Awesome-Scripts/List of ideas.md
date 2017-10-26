@@ -36,4 +36,17 @@ It plays morse code (audio) depending on users' entered string.
 ### 14. The number game that insults you if you get it wrong with entries in a file.
 ### 15. [Bitcoin price tracker GUI](luno_btc_price.py)
 A GUI that shows Bitcoin price with a button that can refresh to the current price.
-~                    
+### 16. [Torrent Renamer](torRenamer.py)
+### 17. [Reddit Scrapping](reddit_scrapping.py)
+### 18. [Port Scanner](port_scanner.py)
+### 19. [Fibonacci](fibonacci.py)
+### 20. [Exponentiation](exponentiation.py)
+### 21. [Chat Server](chat_serv.py)
+An async chat appliation
+### 22. [Chat Client](chat_clnt_GUI.py)
+A GUI for a chat client
+### 23. [Archive Deployment](archive_deployment_packages.py)
+ zip and upload your deployment packages to Google Drive
+### 24. [Dice Roll](Rolling%20a%20dice)
+### 25. [Live Cricket Score](LiveCricketScore.py)
+Display the score of a cricket game in realtime
