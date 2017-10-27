@@ -4,7 +4,7 @@
 Manage your gmail right from your terminal!
 Ensure that you have a secret.pyc file for your credentials, with format:
 ###
-who = "your_username@gmail.com"
+MAILBOX = "your_gmail_username"
 PASSWD = "your gmail password"
 ###
 You might need to enable access to less secure apps in your gmail settings.
@@ -14,7 +14,13 @@ from imaplib import IMAP4_SSL
 from smtplib import SMTP_SSL, SMTPAuthenticationError
 from poplib import POP3_SSL, error_proto
 import pydoc
-from secret import * # Gets credentials for gmail account.
+
+try:
+    from secret import * # Gets credentials for gmail account.
+except ImportError:
+    print("Please create a secret.pyc file for your credentials.")
+    exit()
+
 from socket import gaierror
 import subprocess
 from time import sleep
