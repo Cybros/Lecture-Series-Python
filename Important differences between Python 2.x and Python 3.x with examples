@@ -5,3 +5,161 @@ Unicode
 xrange
 Error Handling
 _future_ module
+
+Division Operator
+If we are porting our code or executing the python 3.x code in python 2.x, it can be dangerous if integer division changes go unnoticed (since it doesn’t raise any error). It is preferred to use the floating value (like 7.0/5 or 7/5.0) to get the expected result when porting our code.
+
+print 7 / 5
+print -7 / 5   
+ 
+'''
+Output in Python 2.x
+1
+-2
+Output in Python 3.x :
+1.4
+-1.4
+ 
+# Refer below link for details
+# http://www.geeksforgeeks.org/division-operator-in-python/
+'''
+print function
+
+This is the most well known change. In this the print function in Python 2.x is replaced by print() function in Python 3.x,i.e, to print in Python 3.x an extra pair of parenthesis is required.
+
+print 'Hello, Geeks'      # Python 3.x doesn't support
+print('Hope You like these facts')
+ 
+'''
+Output in Python 2.x :
+Hello, Geeks
+Hope You like these facts
+ 
+Output in Python 3.x :
+File "a.py", line 1
+    print 'Hello, Geeks'
+                       ^
+SyntaxError: invalid syntax
+ 
+Refer below link for details
+http://www.geeksforgeeks.org/g-fact-25-print-single-multiple-variable-python/
+'''
+As we can see, if we use parenthesis in python 2.x then there is no issue but if we don’t use parenthesis in python 3.x, we get SyntaxError.
+
+Unicode:
+
+In Python 2, implicit str type is ASCII. But in Python 3.x implicit str type is Unicode.
+
+print(type('default string '))
+print(type(b'string with b '))
+ 
+'''
+Output in Python 2.x (Bytes is same as str)
+<type 'str'>
+<type 'str'>
+ 
+Output in Python 3.x (Bytes and str are different)
+<class 'str'>
+<class 'bytes'>
+'''
+Python 2.x also supports Unicode
+
+print(type('default string '))
+print(type(u'string with b '))
+ 
+'''
+Output in Python 2.x (Unicode and str are different)
+<type 'str'>
+<type 'unicode'>
+ 
+Output in Python 3.x (Unicode and str are same)
+<class 'str'>
+<class 'str'>
+'''
+
+xrange:
+
+xrange() of Python 2.x doesn’t exist in Python 3.x. In Python 2.x, range returns a list i.e. range(3) returns [0, 1, 2] while xrange returns a xrange object i. e., xrange(3) returns iterator object which work similar to Java iterator and generates number when needed.
+If we need to iterate over the same sequence multiple times, we prefer range() as range provides a static list. xrange() reconstructs the sequence every time. xrange() doesn’t support slices and other list methods. The advantage of xrange() is, it saves memory when task is to iterate over a large range.
+
+In Python 3.x, the range function now does what xrange does in Python 2.x, so to keep our code portable, we might want to stick to using range instead. So Python 3.x’s range function is xrange from Python 2.x.
+
+for x in xrange(1, 5):
+    print(x),
+ 
+for x in range(1, 5):
+    print(x),
+ 
+'''
+Output in Python 2.x
+1 2 3 4 1 2 3 4
+ 
+Output in Python 3.x
+NameError: name 'xrange' is not defined
+'''
+
+Error Handling:
+
+There is a small change in error handling in both versions. In python 3.x, ‘as’ keyword is required.
+
+try:
+    trying_to_check_error
+except NameError, err:
+    print err, 'Error Caused'   # Would not work in Python 3.x
+ 
+'''
+Output in Python 2.x:
+name 'trying_to_check_error' is not defined Error Caused
+ 
+Output in Python 3.x :
+File "a.py", line 3
+    except NameError, err:
+                    ^
+SyntaxError: invalid syntax
+'''
+try:
+     trying_to_check_error
+except NameError as err: # 'as' is needed in Python 3.x
+     print (err, 'Error Caused')
+ 
+'''
+Output in Python 2.x:
+(NameError("name 'trying_to_check_error' is not defined",), 'Error Caused')
+ 
+Output in Python 3.x :
+name 'trying_to_check_error' is not defined Error Caused
+'''
+
+_future_module:
+
+This is basically not a difference between two version, but useful thing to mention here. The idea of __future__ module is to help in migration. We can use Python 3.x
+If we are planning Python 3.x support in our 2.x code,we can ise_future_ imports it in our code.
+
+For example, in below Python 2.x code, we use Python 3.x’s integer division behavior using __future__ module
+
+# In below python 2.x code, division works
+# same as Python 3.x because we use  __future__
+from __future__ import division
+ 
+print 7 / 5
+print -7 / 5
+
+
+Output :
+
+1.4
+-1.4
+Another example where we use brackets in Python 2.x using __future__ module
+
+from __future__ import print_function    
+ 
+print('GeeksforGeeks')
+
+Output :
+
+GeeksforGeeks
+Refer this for more details of __future__ module.
+
+This article is contributed by Arpit Agarwal. If you like GeeksforGeeks and would like to contribute, you can also write an article and mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above
