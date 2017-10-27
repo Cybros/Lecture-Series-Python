@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Requires a secret.pyc file containing email credentials for running
 """
-Manage your gmail right from your inbox!
+Manage your gmail right from your terminal!
 Ensure that you have a secret.pyc file for your credentials, with format:
 ###
 who = "your_username@gmail.com"
