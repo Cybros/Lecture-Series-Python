@@ -37,3 +37,5 @@ It plays morse code (audio) depending on users' entered string.
 ### 15. [Bitcoin price tracker GUI](luno_btc_price.py)
 A GUI that shows Bitcoin price with a button that can refresh to the current price.
 ~                    
+### 16. [Reddit Scraper] (Lecture-Series-Python/Awesome-Scripts/reddit_scrapping.py)
+* A script that scrapes Reddit for beautiful soups
