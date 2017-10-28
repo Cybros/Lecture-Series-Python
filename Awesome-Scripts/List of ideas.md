@@ -36,4 +36,18 @@ It plays morse code (audio) depending on users' entered string.
 ### 14. The number game that insults you if you get it wrong with entries in a file.
 ### 15. [Bitcoin price tracker GUI](luno_btc_price.py)
 A GUI that shows Bitcoin price with a button that can refresh to the current price.
-~                    
+### 16. [Rolling a Dice](Rolling_Dice.py)
+A Simple Script that Rolls a dice.
+### 17. [Chat Server](chat_serv.py)
+Server for Multithreaded Chat application.
+### 18. [Exponentiation](exponentiation.py)
+To Get Precised exponent of desired Float Number.
+### 19. [Fibonacci](fibonacci.py)
+A simple fibonacci script.
+### 20. [Port Scanner](port_scanner.py)
+Simple Port Scanner to check whether port 80 available or not.
+### 21. [File Renamer](toRenamer.py)
+This program renames a list of tv episodes. Episodes can be nested inside folders. folders will be flattened and episodes renamed to a particular format. 
+### 22. [Reddit Scrapping.py](reddit_scrapping.py)
+Scrapper for Reddit.
+
