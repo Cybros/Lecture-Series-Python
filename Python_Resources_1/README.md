@@ -2096,3 +2096,4 @@ A curated list of awesome Python frameworks, libraries and software.
 * [linkedin/pyexchange](https://github.com/linkedin/pyexchange) - Python wrapper for Microsoft Exchange
 * [baudm/mplayer.py](https://github.com/baudm/mplayer.py) - Lightweight Python wrapper for MPlayer
 * [crummy.com/BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)  - One of the must-have tools for python web scraping!
+* [nasa/podaacpy](https://github.com/nasa/podaacpy)  - A python utility library for interacting with NASA JPL's PO.DAAC
