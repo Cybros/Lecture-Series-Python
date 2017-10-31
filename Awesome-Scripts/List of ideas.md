@@ -51,3 +51,5 @@ This program renames a list of tv episodes. Episodes can be nested inside folder
 ### 22. [Reddit Scrapping.py](reddit_scrapping.py)
 Scrapper for Reddit.
 
+### 23. [Amazon Review Scrapping and storing in CSV file](amazonReviewInCsv.py)
+* Just Enter **Product Name** and the script scrapes product reviews (author, date, rating, review), to avoid blocking the ip a randaom delay is added between requests and stores the data in CSV file so that it can be used for further analysis(sentiment analysis).
