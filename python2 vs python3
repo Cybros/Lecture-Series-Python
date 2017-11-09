@@ -1,0 +1,4 @@
+difference between python2 and python3
+
+in python 2 syntax for print function is print'hello world' but in python 3 extra paranthesis are required i.e, print('hello world')
+Integer division this change is particularly dangerous if you are porting code, or if you are executing Python 3 code in Python 2, since the change in integer-division behavior can often go unnoticed 

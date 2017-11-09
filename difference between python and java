@@ -1,0 +1,4 @@
+difference between python and java
+
+java is statically typed whereas python is dynamically typed i.e, Java forces you to define the type of a variable when you first declare it and will not allow you to change the type later in the program whereas Python allows you to change the type of a variable, by replacing an integer with a string
+major difference between them is that, Java can be used to create platform independent applications. Any computer or mobile device that is able to run the Java virtual machine can run a Java application, whereas to run Python programs you need a compiler that can turn Python code into code that your particular operating system can understand
