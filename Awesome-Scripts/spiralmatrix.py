@@ -35,7 +35,3 @@ for i in range(k):
 	c=c+1
 for m in matrix:
 	print m
-    ln = ""
-    for i in m:
-        ln += str(i) + " "
-    print(ln)
