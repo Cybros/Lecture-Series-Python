@@ -14,7 +14,7 @@ class MyBasicMath:
         """
         return a * b
 
-    def sum(self, a, b):
+    def add(self, a, b):
         """
         Sum
         :param a:
