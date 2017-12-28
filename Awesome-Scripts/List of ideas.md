@@ -50,4 +50,5 @@ Simple Port Scanner to check whether port 80 available or not.
 This program renames a list of tv episodes. Episodes can be nested inside folders. folders will be flattened and episodes renamed to a particular format. 
 ### 22. [Reddit Scrapping.py](reddit_scrapping.py)
 Scrapper for Reddit.
-
+### 23. Script to read out the contents of an image on mouse hover using neural networks for blind web users.
+A script to use neural networks and analyze the contents of images on a webpage and return a properly formed description of the image to improve accessibility for blind users.
