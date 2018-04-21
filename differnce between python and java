@@ -1,0 +1,5 @@
+in java we have to write more lines as comparsion to python .
+but in python time taken is much more than java .
+let we have to print hello world
+so in java we write - system.out.println("hellow world");
+in python  we write - print "hellow world"
