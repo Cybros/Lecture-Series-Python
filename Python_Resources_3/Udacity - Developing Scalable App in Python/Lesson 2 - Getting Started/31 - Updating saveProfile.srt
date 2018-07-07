@@ -1,0 +1,89 @@
+0:00:00.170,0:00:03.460
+Your app is now in the state that[br]the saveProfile method knows
+
+0:00:03.460,0:00:06.680
+that when it is called, it should be[br]passed data that conforms to the fields
+
+0:00:06.680,0:00:09.160
+defined ProfileMiniForm class.
+
+0:00:09.160,0:00:12.735
+Which in practical terms means that the[br]input data can include display name and
+
+0:00:12.735,0:00:13.880
+teeShirtSize.
+
+0:00:13.880,0:00:17.040
+If the input data includes any[br]other fields, they will be ignored.
+
+0:00:17.040,0:00:19.560
+Since we also want to store[br]the user's email address,
+
+0:00:19.560,0:00:22.480
+we'll do that by getting the email[br]address of the logged in user.
+
+0:00:22.480,0:00:24.960
+This of course means that[br]the user must be logged in.
+
+0:00:24.960,0:00:28.380
+You can check that by calling[br]endpoints.get_current_user.
+
+0:00:28.380,0:00:31.600
+If that does not return to user object,[br]the user is not logged in.
+
+0:00:31.600,0:00:34.600
+The endpoints system lets your[br]code handle this case by raising
+
+0:00:34.600,0:00:37.890
+an exception, which the front end[br]can handle by displaying an error or
+
+0:00:37.890,0:00:39.820
+redirecting to the log in screen.
+
+0:00:39.820,0:00:43.020
+So you don't have to change the[br]saveProfile method to get this behavior.
+
+0:00:43.020,0:00:46.110
+But instead work with[br]the getProfileFromUser method
+
+0:00:46.110,0:00:48.020
+where we used dummy data before.
+
+0:00:48.020,0:00:50.540
+Check out the TODO 2 comments.
+
+0:00:50.540,0:00:53.120
+Step 1,[br]make sure the user is authenticated.
+
+0:00:53.120,0:00:57.540
+If they're not, then we'll raise[br]the endpoints.UnauthorizedException.
+
+0:00:57.540,0:01:00.730
+Step 2, use the real data[br]from the logged in user
+
+0:01:00.730,0:01:04.640
+instead of the dummy data for[br]displayName and mainEmail.
+
+0:01:04.640,0:01:06.610
+Now there's one more thing to[br]change if you'd like to use
+
+0:01:06.610,0:01:11.140
+the app from the JavaScript based front[br]end, as well as from the APIs Explorer.
+
+0:01:11.140,0:01:15.260
+Take the same WEB_CLIENT_ID that[br]you used in settings.py and
+
+0:01:15.260,0:01:21.690
+put it in the JavaScript file app.js,[br]in place of this web-client-id here.
+
+0:01:21.690,0:01:23.890
+When you're done,[br]deploy your code on localhost and
+
+0:01:23.890,0:01:25.690
+test it, then deploy to appspot.
+
+0:01:25.690,0:01:28.620
+Check off each one of these boxes[br]as you finish that step and
+
+0:01:28.620,0:01:30.250
+then fill in your project ID down here.

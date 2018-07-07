@@ -1,0 +1,65 @@
+0:00:00.520,0:00:02.380
+So now when you're up and running with conference
+
+0:00:02.380,0:00:05.060
+central you have a pretty good idea of how to
+
+0:00:05.060,0:00:08.770
+write and deploy app engine applications. In the last lesson
+
+0:00:08.770,0:00:12.210
+we also covered usage management and we added it to
+
+0:00:12.210,0:00:16.050
+conference central so only authenticated users can access the application.
+
+0:00:17.420,0:00:20.140
+When you write applications you very often need to store
+
+0:00:20.140,0:00:22.390
+data. And as you know, there are a number of
+
+0:00:22.390,0:00:26.080
+ways you can do this. App Engine is no exception.
+
+0:00:26.080,0:00:30.790
+It can work with a number of different storage technologies.
+
+0:00:30.790,0:00:35.566
+But there is one that is particularly important, it's called Datastore.
+
+0:00:35.566,0:00:40.978
+[BLANK_AUDIO]
+
+0:00:40.978,0:00:44.840
+This is the Big Table restaurant here at Google. You may have heard of Big
+
+0:00:44.840,0:00:48.290
+Table. It's a technology Google created and
+
+0:00:48.290,0:00:52.960
+published a famous paper about in 2006. Big
+
+0:00:52.960,0:00:56.360
+Table allows unlimited amount of data to
+
+0:00:56.360,0:00:59.310
+be stored and searched effectively. And many of
+
+0:00:59.310,0:01:02.400
+the huge services being run here at Google
+
+0:01:02.400,0:01:05.310
+chose Big Table to store data. You know
+
+0:01:05.310,0:01:10.530
+what? App Engine Datastore also uses Big Table. That means
+
+0:01:10.530,0:01:15.220
+that your applications ge the same massive scale. Isn't that great?
+
+0:01:17.320,0:01:23.660
+Hm, but I'm starting to feel a little bit hungry. Hey! I think I'll go in,
+
+0:01:23.660,0:01:31.024
+and get a big bite in the Big Table restaurant! See you in class! [NOISE]

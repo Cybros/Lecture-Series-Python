@@ -1,0 +1,56 @@
+0:00:00.320,0:00:03.090
+So we've talked about push and pull queues now. But
+
+0:00:03.090,0:00:05.750
+what if you just want to do something at regular intervals?
+
+0:00:05.750,0:00:09.670
+For example, perform a backup, remove temporary files or send a
+
+0:00:09.670,0:00:13.560
+daily report at midnight every day. That's exactly what a Cron
+
+0:00:13.560,0:00:16.980
+job does. It's a scheduler. An app engine cron job
+
+0:00:16.980,0:00:19.480
+is very similar to a cron job in Unix, if you
+
+0:00:19.480,0:00:22.556
+have worked with that. So, cron is a scheduler within app
+
+0:00:22.556,0:00:26.860
+engine that allows you to specify tasks that are executed regularly.
+
+0:00:26.860,0:00:29.870
+Cron is perfect to use to perform background tasks, which
+
+0:00:29.870,0:00:33.690
+are not directly initiated from user activity. For example, to
+
+0:00:33.690,0:00:36.980
+run batch or synchronization jobs of different kinds and back
+
+0:00:36.980,0:00:40.780
+ups, etc. The cron job is very easy to configure
+
+0:00:40.780,0:00:43.770
+and there are two things you need to specify. First
+
+0:00:43.770,0:00:46.390
+of all, the URL that should be called. This is
+
+0:00:46.390,0:00:49.220
+where you place the code you want to execute and
+
+0:00:49.220,0:00:52.490
+then you also need to specify the schedule which controls
+
+0:00:52.490,0:00:57.150
+when the task URL is called and as with the Queues there is a ten minute
+
+0:00:57.150,0:00:59.710
+limit for dynamic instances. If you want more
+
+0:00:59.710,0:01:02.020
+time than that, you can use resident instances.

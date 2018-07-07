@@ -1,0 +1,56 @@
+0:00:00.370,0:00:01.942
+Okay.[br]For displayName, well,
+
+0:00:01.942,0:00:03.325
+that's a String Property.
+
+0:00:03.325,0:00:04.620
+[INAUDIBLE] There, right?
+
+0:00:04.620,0:00:07.755
+Names are strings, and datastore[br]supports Unicode strings just fine.
+
+0:00:07.755,0:00:11.410
+MainEmail, well,[br]that's another String Property.
+
+0:00:11.410,0:00:14.120
+Later on, you might want to subclass[br]String Property to make sure that we're
+
+0:00:14.120,0:00:16.320
+only storing valid[br]email addresses there.
+
+0:00:16.320,0:00:20.820
+But for now, String Property is the[br]correct type for this, and teeShirtSize.
+
+0:00:20.820,0:00:23.070
+At this point,[br]this may not be any kind of surprise.
+
+0:00:23.070,0:00:24.670
+This will also be a String Property.
+
+0:00:24.670,0:00:28.740
+Even though this is an enum in the API,[br]to the datastore, it's just a string.
+
+0:00:28.740,0:00:30.570
+So, not too much variety here.
+
+0:00:30.570,0:00:32.075
+Everything ended up[br]being a String Property.
+
+0:00:32.075,0:00:35.260
+But we've made some progress defining[br]our app, and that's awesome.
+
+0:00:35.260,0:00:38.372
+The code for this is going to go[br]into the file called models.py.
+
+0:00:38.372,0:00:41.445
+The name indicates just where we're[br]going to put our data models.
+
+0:00:41.445,0:00:43.255
+You already saw this in[br]the previous lesson when I
+
+0:00:43.255,0:00:44.955
+introduced the profile class.
+
+0:00:44.955,0:00:47.122
+Now, back to Magnus for[br]some more about datastore keys.

@@ -1,0 +1,59 @@
+0:00:00.150,0:00:03.550
+One piece of missing functionality from[br]the Conference Central application
+
+0:00:03.550,0:00:06.939
+is a function to return the list of[br]conferences that a user has registered
+
+0:00:06.939,0:00:07.780
+to attend.
+
+0:00:07.780,0:00:11.350
+We've implemented the functionality[br]to register for a conference, and
+
+0:00:11.350,0:00:14.300
+now user profiles have web[br]saved keys of conferences.
+
+0:00:14.300,0:00:17.670
+But you don't want to display keys,[br]you want to display conference names and
+
+0:00:17.670,0:00:19.010
+dates and such.
+
+0:00:19.010,0:00:23.620
+We've provided a code outline of the[br]getConferencesToAttend endpoints method.
+
+0:00:23.620,0:00:26.630
+Your task is to use all that you've[br]learned about dealing with entities and
+
+0:00:26.630,0:00:30.040
+keys to write the code that retrieves[br]these conferences from the data store.
+
+0:00:30.040,0:00:34.160
+You can find this outlying[br]code in TODO_7_Conference.py.
+
+0:00:34.160,0:00:34.800
+As usual,
+
+0:00:34.800,0:00:38.280
+as you complete this steps, check them[br]off here, then answer this question.
+
+0:00:38.280,0:00:42.340
+The instructions for this method[br]ask you to use ndb.get-multi,
+
+0:00:42.340,0:00:44.740
+instead of doing a loop over key.get.
+
+0:00:44.740,0:00:45.760
+Why do you think that is?
+
+0:00:45.760,0:00:50.010
+Do you think it's because the return[br]values fro ndb.get_multi are smaller and
+
+0:00:50.010,0:00:52.080
+use less memory than[br]the ones in key.get?
+
+0:00:52.080,0:00:56.250
+Do you think it's that get_multi makes[br]fewer requests to the datastore, or
+
+0:00:56.250,0:00:58.510
+do you think that it's just[br]the programmer's preferred style?

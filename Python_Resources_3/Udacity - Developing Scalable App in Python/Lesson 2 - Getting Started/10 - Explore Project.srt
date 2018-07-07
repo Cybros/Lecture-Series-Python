@@ -1,0 +1,74 @@
+0:00:00.167,0:00:03.719
+Now your development environment is[br]set up and you have the starting code.
+
+0:00:03.719,0:00:06.854
+I'll walk you through a very[br]simple Endpoints API project.
+
+0:00:06.854,0:00:13.330
+You can find the code in the Lesson_2[br]folder named 000_Hello_Endpoints.
+
+0:00:13.330,0:00:15.772
+Add that whole folder[br]to your code editor.
+
+0:00:15.772,0:00:19.484
+The app.yaml file is where[br]the configuration of the app is stored.
+
+0:00:19.484,0:00:22.822
+There are important configuration[br]parameters that go here,
+
+0:00:22.822,0:00:25.846
+like your project ID and[br]the version number of your app.
+
+0:00:25.846,0:00:28.038
+Project ID needed when[br]you deploy your app and
+
+0:00:28.038,0:00:31.279
+you can have several versions of[br]your app running at the same time.
+
+0:00:31.279,0:00:33.014
+Down here there's configuration for
+
+0:00:33.014,0:00:35.946
+URL handlers that determine what[br]should be done with a request.
+
+0:00:35.946,0:00:39.314
+You can configure static file paths,[br]and for Endpoints,
+
+0:00:39.314,0:00:43.330
+what to do with when an Endpoint[br]request is performed.
+
+0:00:43.330,0:00:46.950
+As you can see, there's a secure[br]always line for the handlers.
+
+0:00:46.950,0:00:48.660
+That means the connection[br]between the client and
+
+0:00:48.660,0:00:51.400
+the server will always be over HTTPS.
+
+0:00:51.400,0:00:53.400
+Even if the client initially[br]tried to use HTTP.
+
+0:00:54.400,0:00:57.110
+And at the end,[br]you'll see the library's configuration.
+
+0:00:57.110,0:01:00.460
+For this simple app, you just need[br]to include the Endpoints library.
+
+0:01:00.460,0:01:04.647
+So, back up in the handlers,[br]you'll see there's an entry for
+
+0:01:04.647,0:01:07.657
+slash that points to static/index.html.
+
+0:01:07.657,0:01:10.974
+But what's much more[br]interesting is this handler for
+
+0:01:10.974,0:01:14.739
+Endpoints that points to[br]helloworld_api.APPLICATION.
+
+0:01:14.739,0:01:17.964
+And there's this file called[br]helloworld_api.py, and
+
+0:01:17.964,0:01:22.320
+this is where the application code lives[br]and where the endpoints are defined.

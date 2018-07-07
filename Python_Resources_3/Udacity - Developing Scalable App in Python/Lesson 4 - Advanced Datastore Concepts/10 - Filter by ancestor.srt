@@ -1,0 +1,80 @@
+0:00:00.300,0:00:03.520
+Now you'll learn how to run queries to[br]find conferences that were created by
+
+0:00:03.520,0:00:04.910
+a specific user.
+
+0:00:04.910,0:00:06.970
+Remember that each conference[br]has an ancestor and
+
+0:00:06.970,0:00:09.800
+that ancestor is the profile[br]entity of the user who created it.
+
+0:00:09.800,0:00:12.760
+So here's how you create[br]a query to get all entities
+
+0:00:12.760,0:00:14.600
+that have a particular ancestor.
+
+0:00:14.600,0:00:19.400
+You just add an ancestor argument to[br]the query with the key being the profile
+
+0:00:19.400,0:00:21.440
+of whichever user it[br]is you're looking for.
+
+0:00:21.440,0:00:23.590
+This kind of query is[br]called an ancestor query.
+
+0:00:23.590,0:00:26.900
+But you can also think of it as a[br]descendant query because it lets you get
+
+0:00:26.900,0:00:29.260
+all the descendents of[br]a particular entity or
+
+0:00:29.260,0:00:31.660
+all the descendants that[br]match a particular kind.
+
+0:00:31.660,0:00:35.080
+So for conferences, this will get[br]all of the conference objects
+
+0:00:35.080,0:00:37.100
+that were created by a particular user.
+
+0:00:37.100,0:00:41.190
+Now you already dealt with the response[br]classes for conferences, so all you'll
+
+0:00:41.190,0:00:45.020
+need to do is define get conferences[br]created in the conference API.
+
+0:00:45.020,0:00:47.400
+It doesn't need to accept[br]anything from the request so
+
+0:00:47.400,0:00:49.310
+you can use void message there.
+
+0:00:49.310,0:00:50.760
+But since this query, query's for
+
+0:00:50.760,0:00:54.260
+conferences created by the logged in[br]user, you need to make sure the user
+
+0:00:54.260,0:00:57.890
+is logged in, and if not, throw[br]the endpoints unauthorized exception.
+
+0:00:57.890,0:01:00.870
+That's your task for this exercise,[br]define the endpoint,
+
+0:01:00.870,0:01:03.480
+test it, then deploy and[br]create some conferences.
+
+0:01:03.480,0:01:09.170
+The sample code is in lesson four[br]editions to do three conference.qy.
+
+0:01:09.170,0:01:12.130
+Once you're done adding[br]getConferencesCreated to the conference
+
+0:01:12.130,0:01:15.120
+API, test your code on localhost,[br]deploy it to appspot,
+
+0:01:15.120,0:01:18.980
+create several more conferences, and try[br]querying them, and put your app ID here.

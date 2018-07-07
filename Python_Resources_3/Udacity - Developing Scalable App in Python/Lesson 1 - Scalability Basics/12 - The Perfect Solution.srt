@@ -1,0 +1,56 @@
+0:00:00.580,0:00:03.100
+OK, so let's go through the solution. A news site
+
+0:00:03.100,0:00:07.390
+like New York Times, absolutely. It's an internet service, it
+
+0:00:07.390,0:00:09.690
+has lots of users and the load on the service
+
+0:00:09.690,0:00:12.440
+probably varies so the scaling of app engine could be used
+
+0:00:12.440,0:00:16.320
+a perfect match. What about a device driver testing system?
+
+0:00:17.450,0:00:19.970
+Well, it of course depends on what kind of system this
+
+0:00:19.970,0:00:22.650
+is but just the fact that device driver is part
+
+0:00:22.650,0:00:25.610
+of the title, make you think that it needs access to
+
+0:00:25.610,0:00:29.540
+low level resources within in a computer. Remember, app
+
+0:00:29.540,0:00:32.780
+engines are generic platform to build scalable applications and
+
+0:00:32.780,0:00:35.120
+from that perspective this does not sound like a
+
+0:00:35.120,0:00:39.660
+match. What about a personal portfolio site? Just because
+
+0:00:39.660,0:00:41.980
+it's a personal site and probably does not need
+
+0:00:41.980,0:00:44.610
+massive scale, does not mean that app engine can
+
+0:00:44.610,0:00:47.700
+not be of great use. App engine simplifies development
+
+0:00:47.700,0:00:51.440
+of server-side applications greatly, so this is a good match.
+
+0:00:51.440,0:00:56.600
+What about a video game? Well, if we just mean the user interface part then
+
+0:00:56.600,0:00:58.700
+app engine is not a good match, app
+
+0:00:58.700,0:01:00.960
+engine is used to develop server side applications.

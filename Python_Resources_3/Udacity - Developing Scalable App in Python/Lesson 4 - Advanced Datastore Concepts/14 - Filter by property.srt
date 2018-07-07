@@ -1,0 +1,26 @@
+0:00:00.330,0:00:02.020
+So here is one possible solution.
+
+0:00:02.020,0:00:05.320
+We have the filterPlayground method,[br]which is exposed to the API
+
+0:00:05.320,0:00:09.350
+with the request type of VoidMessage,[br]response type of ConferenceForms.
+
+0:00:09.350,0:00:13.570
+Starts out by building an empty query,[br]then filters the query by city equals
+
+0:00:13.570,0:00:17.310
+London, then by Conference.topics[br]equals Medical Innovations.
+
+0:00:17.310,0:00:18.820
+Let's just sort it by conference name,
+
+0:00:18.820,0:00:20.540
+because that makes it[br]a little bit neater.
+
+0:00:20.540,0:00:23.040
+And then return,[br]the ConferenceForms object,
+
+0:00:23.040,0:00:25.330
+which is a copy of each[br]conference returned by the query.

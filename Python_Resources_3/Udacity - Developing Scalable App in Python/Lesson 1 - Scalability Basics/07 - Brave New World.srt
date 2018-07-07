@@ -1,0 +1,83 @@
+0:00:00.430,0:00:03.350
+As we concluded, a radical change was needed a
+
+0:00:03.350,0:00:07.320
+brave new world. A completely new approach to building applications
+
+0:00:07.320,0:00:09.630
+needed to be developed that could scale to meet
+
+0:00:09.630,0:00:13.060
+the demands of the rapidly growing internet. Not a key
+
+0:00:13.060,0:00:15.640
+step to building a scalable system is you need
+
+0:00:15.640,0:00:19.140
+to decouple it from executing on a single computer. You
+
+0:00:19.140,0:00:22.600
+design a scale out architecture as your application scales
+
+0:00:22.600,0:00:25.910
+outside the scope of a single computer and this distributed
+
+0:00:25.910,0:00:28.670
+architecture needs to be a socalled, share
+
+0:00:28.670,0:00:31.760
+nothing architecture. Meaning, that it must not depend
+
+0:00:31.760,0:00:34.150
+on any shared resources that can become the
+
+0:00:34.150,0:00:36.680
+bottleneck, this way if your application needs a
+
+0:00:36.680,0:00:39.270
+scale, you can just provide more computers to
+
+0:00:39.270,0:00:43.080
+provide the additional capacity required. That means, you
+
+0:00:43.080,0:00:48.610
+can run your application on. All the things.
+
+0:00:48.610,0:00:51.110
+And to get even more flexibility the concept
+
+0:00:51.110,0:00:54.030
+of virtual machines was born which enables you
+
+0:00:54.030,0:00:56.800
+to decouple a physical machine from the application
+
+0:00:56.800,0:01:00.310
+execution machine. This had great flexibility gain since
+
+0:01:00.310,0:01:03.220
+the infrastructure turned virtual you would now run your
+
+0:01:03.220,0:01:06.540
+scale out application on several virtual machines instead
+
+0:01:06.540,0:01:10.270
+of physical computers. Problem solved, right? You can
+
+0:01:10.270,0:01:13.100
+now scale indefinitely by adding these standard building
+
+0:01:13.100,0:01:16.600
+blocks of performance that your application can utilize and
+
+0:01:16.600,0:01:18.700
+you have decomposed your application from the
+
+0:01:18.700,0:01:22.580
+specific execution machine, great. Now only one
+
+0:01:22.580,0:01:24.950
+question remains, how do you design your
+
+0:01:24.950,0:01:27.330
+application to be able to scale like this?

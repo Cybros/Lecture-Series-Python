@@ -1,0 +1,32 @@
+0:00:00.000,0:00:03.255
+So step one is to change[br]the accepted request class.
+
+0:00:03.255,0:00:07.713
+Instead of void message with no fields,[br]we want to take ProfileMiniForm.
+
+0:00:07.713,0:00:12.078
+Step two is to pass the request[br]up to the doProfile function.
+
+0:00:12.078,0:00:18.092
+Now let's save this and run it and[br]check it out in the APIs Explorer.
+
+0:00:18.092,0:00:20.321
+Here's the conference API.
+
+0:00:20.321,0:00:23.688
+If we say save profile,[br]put a display name in.
+
+0:00:23.688,0:00:27.240
+Let's say, maybe my name and[br]a teeShirtSize.
+
+0:00:27.240,0:00:30.839
+Let's say men's medium,[br]because that's the size that I wear.
+
+0:00:30.839,0:00:34.536
+Hit Execute and we see the request[br]going in with these fields and
+
+0:00:34.536,0:00:38.525
+this time, the response comes back[br]with the fields returned to us.
+
+0:00:38.525,0:00:39.450
+It works.

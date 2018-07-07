@@ -1,0 +1,137 @@
+0:00:00.000,0:00:02.583
+Using the Memcache API is really simple.
+
+0:00:02.583,0:00:06.603
+You call the set, get or[br]delete commands supplying the key for
+
+0:00:06.603,0:00:08.000
+the Memcache entry.
+
+0:00:08.000,0:00:12.103
+In the case of the set method, you also[br]supply the string that you'd like to be
+
+0:00:12.103,0:00:16.292
+the value and the get method will return[br]the value for the key that you provide.
+
+0:00:16.292,0:00:17.583
+They key can be any string.
+
+0:00:17.583,0:00:21.252
+For our code, we'll make it a constant,[br]because we'll be using it repeatedly
+
+0:00:21.252,0:00:24.125
+when retrieving and[br]deleting announcements from Memcache.
+
+0:00:24.125,0:00:27.795
+You also need a method that queries[br]conferences to find if they're any you
+
+0:00:27.795,0:00:29.167
+want to put into the cache.
+
+0:00:29.167,0:00:32.250
+An if so,[br]setting an entry in the Memcache API.
+
+0:00:32.250,0:00:35.422
+You want to query for[br]conferences that are almost sold out,
+
+0:00:35.422,0:00:38.792
+that have seats less than or[br]equal to five, but more than zero.
+
+0:00:38.792,0:00:42.032
+You don't really want to expose this[br]functionality as an endpoint, so
+
+0:00:42.032,0:00:43.544
+this should be a private method.
+
+0:00:43.544,0:00:47.460
+Later, we'll talk about using[br]scheduled job or cron jobs.
+
+0:00:47.460,0:00:51.222
+We will need to find a way to call[br]this function via a regular, but
+
+0:00:51.222,0:00:52.208
+protected URL.
+
+0:00:52.208,0:00:56.953
+What we'll do is create a separate file,[br]main.py that will have a function there
+
+0:00:56.953,0:00:59.775
+that uses that[br]cacheAnnouncements function and
+
+0:00:59.775,0:01:01.583
+also sets ahead the furry URL.
+
+0:01:01.583,0:01:05.695
+We'll also add this to app.yaml[br]in the form of an entry forward
+
+0:01:05.695,0:01:07.875
+/crons/set_announcement.
+
+0:01:07.875,0:01:10.083
+Secured by having login: admin.
+
+0:01:10.083,0:01:11.988
+Login: admin means that cron and
+
+0:01:11.988,0:01:16.625
+application developers will be able to[br]access this URL, but not regular users.
+
+0:01:16.625,0:01:20.294
+And it'll let you test it just by going[br]to your app and adding this path.
+
+0:01:20.294,0:01:24.126
+You can implement this on your own or[br]take a look at the provided sample code.
+
+0:01:24.126,0:01:26.583
+The application logic in this[br]case is not that important.
+
+0:01:26.583,0:01:29.917
+Mostly, this is just to demonstrate[br]the use of the Memcache API.
+
+0:01:29.917,0:01:33.366
+So now there also has to be an endpoint[br]method for getting the announcement, so
+
+0:01:33.366,0:01:35.208
+it can be displayed[br]somewhere in the app.
+
+0:01:35.208,0:01:37.042
+You'll also have to[br]finish the code here.
+
+0:01:37.042,0:01:39.586
+And for endpoints, we'll also[br]need a simple message class for
+
+0:01:39.586,0:01:41.125
+the outgoing message announcement.
+
+0:01:41.125,0:01:43.680
+Because you can't just use[br]strings with endpoints,
+
+0:01:43.680,0:01:45.333
+you have to use ProtoRPC classes.
+
+0:01:45.333,0:01:48.958
+So let's call that class StringMessage[br]and have just one field in there,
+
+0:01:48.958,0:01:49.958
+which is required.
+
+0:01:49.958,0:01:51.375
+So there's quite a bit of work to do.
+
+0:01:51.375,0:01:54.250
+Take a look again at the TODO[br]in the provided code.
+
+0:01:54.250,0:01:57.553
+Remember, you can test your announcement[br]setting function by searching for
+
+0:01:57.553,0:01:59.500
+that Memcache key in[br]the developer console.
+
+0:01:59.500,0:02:03.239
+And you can see if your announcement[br]reading endpoint method works by testing
+
+0:02:03.239,0:02:04.458
+it in the APIs Explorer.
+
+0:02:04.458,0:02:07.950
+So, as you complete these steps, check[br]them off and then put your app id here.

@@ -1,0 +1,26 @@
+0:00:00.210,0:00:03.250
+So in this case you have to use[br]the cross group transaction
+
+0:00:03.250,0:00:06.620
+because the function is changing two[br]different kinds of entities, profile and
+
+0:00:06.620,0:00:07.420
+conference.
+
+0:00:07.420,0:00:10.890
+Although for the conference owner those[br]two entities who belong to the same
+
+0:00:10.890,0:00:13.810
+group because the profile is[br]ancestor for a conference.
+
+0:00:13.810,0:00:16.670
+That's only the case for[br]the user who created the conference.
+
+0:00:16.670,0:00:20.110
+For any other user, the profile entity[br]and the conference entity are not
+
+0:00:20.110,0:00:23.680
+related by ancestral relationship and[br]therefore they belong to two different
+
+0:00:23.680,0:00:26.870
+entity groups and that's why[br]you need to use xg equals true.

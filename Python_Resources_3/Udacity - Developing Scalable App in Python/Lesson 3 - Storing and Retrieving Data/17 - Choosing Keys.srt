@@ -1,0 +1,8 @@
+0:00:00.502,0:00:04.335
+All right so the question is, which of the following properties is a good
+
+0:00:04.335,0:00:08.610
+keyname/ID? Select all that apply, bank account
+
+0:00:08.610,0:00:14.100
+number, date, price, or an email address.

@@ -1,0 +1,104 @@
+0:00:00.250,0:00:04.021
+So now it's time to cover the building blocks to use when doing datestore
+
+0:00:04.021,0:00:08.581
+modelling. They are kind, entity, and
+
+0:00:08.581,0:00:14.040
+property. Let's start with kind shall we? A kind
+
+0:00:14.040,0:00:15.780
+is a name that defines a particular
+
+0:00:15.780,0:00:19.500
+structure. For our conference central application, two different
+
+0:00:19.500,0:00:23.410
+kinds are, for example, profile and conference.
+
+0:00:23.410,0:00:25.460
+A kind is similar to the concept of
+
+0:00:25.460,0:00:29.230
+classes in object oriented programming. Given a kind
+
+0:00:29.230,0:00:31.650
+you can create many entities of that kind, so
+
+0:00:31.650,0:00:34.360
+in this picture we can do three entities, one
+
+0:00:34.360,0:00:36.710
+for the profile kind and two for the conference
+
+0:00:36.710,0:00:40.880
+kind. And as you can see entities are very
+
+0:00:40.880,0:00:43.990
+similar to the concept of objects in object oriented
+
+0:00:43.990,0:00:48.170
+programming, and each entity holds a set of properties
+
+0:00:48.170,0:00:50.570
+which are highlighted by the red sections in this
+
+0:00:50.570,0:00:53.460
+picture, and by now you can see that
+
+0:00:53.460,0:00:56.830
+properties are very similar to the concept of fields,
+
+0:00:56.830,0:01:00.637
+members, or attributes in object oriented programming. In
+
+0:01:00.637,0:01:03.257
+fact, you can also find similarities with the relational
+
+0:01:03.257,0:01:05.620
+of database modeling. Let's look at the table
+
+0:01:05.620,0:01:09.820
+that summarizes these things. So the kind in app
+
+0:01:09.820,0:01:12.670
+engine datastore can be thought of as a class
+
+0:01:12.670,0:01:15.830
+in object oriented programming and as a table in
+
+0:01:15.830,0:01:19.405
+relational database model, and an entity in app engine
+
+0:01:19.405,0:01:21.750
+datastore can be thought of as an object in
+
+0:01:21.750,0:01:24.780
+object oriented programming or as a row in relational
+
+0:01:24.780,0:01:28.890
+database modeling. And finally, a property in Datastore can
+
+0:01:28.890,0:01:31.140
+be thought of as a field or attribute in
+
+0:01:31.140,0:01:34.250
+object oriented programming, and that's a colomn, in relational
+
+0:01:34.250,0:01:37.920
+database modeling. But, this is on a very high
+
+0:01:37.920,0:01:41.060
+level. Since there are many things that differ in Datastore
+
+0:01:41.060,0:01:43.930
+compared to the other technologies, you shouldn't consider these
+
+0:01:43.930,0:01:46.590
+as direct technology. It could help you out in the
+
+0:01:46.590,0:01:49.200
+beginning, but as we dig deeper into how data store
+
+0:01:49.200,0:01:52.110
+works, you will start to see more and more differences

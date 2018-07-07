@@ -1,0 +1,35 @@
+0:00:00.480,0:00:03.780
+Congratulations, we're at the end of Lesson 2.
+
+0:00:03.780,0:00:06.050
+In this lesson, we looked at the App Engine
+
+0:00:06.050,0:00:08.500
+development cycle and how to create an App Engine
+
+0:00:08.500,0:00:11.650
+project. We also looked at Cloud Endpoints that allows
+
+0:00:11.650,0:00:14.430
+you to build a single backend that can work
+
+0:00:14.430,0:00:18.370
+with many different frontend device technologies. Together with Cloud
+
+0:00:18.370,0:00:22.420
+Endpoints, we explore the API explorer, that allows you
+
+0:00:22.420,0:00:25.550
+to test your backend and also other Google services.
+
+0:00:25.550,0:00:29.420
+And finally, we got conference central up and running in
+
+0:00:29.420,0:00:32.960
+your App Engine project, which is great, you've got a real
+
+0:00:32.960,0:00:36.660
+application running in the Google Cloud now. In Lesson 3
+
+0:00:36.660,0:00:40.150
+we have a look at storage. It'll be fun. Join us.

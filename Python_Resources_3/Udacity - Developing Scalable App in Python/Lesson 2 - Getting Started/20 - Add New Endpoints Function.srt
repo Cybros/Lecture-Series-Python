@@ -1,0 +1,47 @@
+0:00:00.240,0:00:03.165
+Now let's make the Hello App a little[br]more interesting by adding a new
+
+0:00:03.165,0:00:05.190
+endpoint with some different inputs.
+
+0:00:05.190,0:00:08.500
+Let's make it possible for your app to[br]say good morning or good evening or
+
+0:00:08.500,0:00:10.730
+even good breakfast time if you want.
+
+0:00:10.730,0:00:15.320
+Add one more endpoints function to your[br]application called greetByPeriod that
+
+0:00:15.320,0:00:18.540
+takes a period input as[br]well as a name input.
+
+0:00:18.540,0:00:22.390
+The period input could be morning or[br]afternoon or evening or, or
+
+0:00:22.390,0:00:23.280
+breakfast time.
+
+0:00:23.280,0:00:26.510
+And this function will return[br]a hello object, whose message is,
+
+0:00:26.510,0:00:30.150
+Good Breakfast Time Marcus Aurelius, if[br]that's what you happened to pass to it.
+
+0:00:30.150,0:00:32.580
+Note that you do not have to write[br]the front end code for this.
+
+0:00:32.580,0:00:34.200
+Just to find the endpoints method.
+
+0:00:34.200,0:00:36.860
+But of course, you're welcome to add[br]this functionality to the web front end
+
+0:00:36.860,0:00:38.210
+as well, if you wish.
+
+0:00:38.210,0:00:40.690
+So when you're done, check off[br]these items on the checklist, and
+
+0:00:40.690,0:00:41.790
+then fill in your project ID

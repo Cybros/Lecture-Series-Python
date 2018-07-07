@@ -1,0 +1,209 @@
+0:00:00.000,0:00:02.882
+How do you know that there's anything[br]happening in the back-end and
+
+0:00:02.882,0:00:04.927
+that's it's actually[br]using an Endpoints API?
+
+0:00:04.927,0:00:09.427
+After all, we could do all of these[br]things just directly from JavaScript
+
+0:00:09.427,0:00:11.660
+with no back-end involved at all.
+
+0:00:11.660,0:00:15.857
+Well, Google gives us a really cool tool[br]that lets us test out an Endpoints API
+
+0:00:15.857,0:00:18.324
+and access the Endpoints API[br]behind our app.
+
+0:00:18.324,0:00:20.298
+It's called API Explorer.
+
+0:00:20.298,0:00:28.819
+You can access it by adding[br]/_ah/apis/explorer to your URL.
+
+0:00:28.819,0:00:30.816
+This even works if you're on localhost.
+
+0:00:30.816,0:00:33.946
+And that will redirect you[br]to this APIs Explorer page,
+
+0:00:33.946,0:00:37.224
+which I will now make a little[br]bit larger so you can see it.
+
+0:00:37.224,0:00:40.964
+And APIs Explorer page is a very nice[br]way to test if your endpoints work
+
+0:00:40.964,0:00:41.682
+correctly.
+
+0:00:41.682,0:00:46.397
+You can look in it at endpoint, and[br]you can see the different API methods,
+
+0:00:46.397,0:00:51.434
+helloworldendpoints.sayHello and[br]sayHelloByName that that API exposes.
+
+0:00:51.434,0:00:55.691
+And if you look at one of these, you'll[br]see the fields, in this case, just name,
+
+0:00:55.691,0:00:57.007
+that that API supports.
+
+0:00:57.007,0:01:00.936
+Now, if I plug my name into that field,[br]press the Execute button,
+
+0:01:00.936,0:01:04.321
+down underneath,[br]it'll show a request and a response.
+
+0:01:04.321,0:01:09.786
+The request here is this GET HTTP[br]request accessing localhost port 8080,
+
+0:01:09.786,0:01:12.910
+sayHelloByName with my parameter.
+
+0:01:12.910,0:01:16.410
+And then down here at the bottom[br]is the response with a 200 OK and
+
+0:01:16.410,0:01:20.680
+an object containing one field called[br]greeting that says, Hello Karl.
+
+0:01:20.680,0:01:23.200
+So again,[br]these methods here correspond directly
+
+0:01:23.200,0:01:26.390
+to methods that are exposed by our API.
+
+0:01:26.390,0:01:29.430
+Now, it's important to understand[br]that the API Explorer page and
+
+0:01:29.430,0:01:31.210
+the home page[br]are completely independent.
+
+0:01:31.210,0:01:34.720
+There are two different paths[br]that access the very same API in
+
+0:01:34.720,0:01:35.850
+the back-end.
+
+0:01:35.850,0:01:39.550
+You could delete that Hello[br]frontend with the buttons entirely.
+
+0:01:39.550,0:01:42.300
+And the API Explorer frontend[br]would still be able to execute
+
+0:01:42.300,0:01:43.950
+the endpoint functions.
+
+0:01:43.950,0:01:47.580
+In fact, that same API can be accessed[br]not only through those frontends, but
+
+0:01:47.580,0:01:51.370
+also potentially through other frontends[br]like a mobile app, or in fact,
+
+0:01:51.370,0:01:54.820
+somebody else's code entirely as[br]long as you granted them permission.
+
+0:01:54.820,0:01:57.420
+So now let's go back to[br]the hello world front-end.
+
+0:01:57.420,0:02:00.700
+As you can see, the two methods are[br]exposed by two different buttons, and
+
+0:02:00.700,0:02:03.210
+the response is shown[br]as a JavaScript alert.
+
+0:02:03.210,0:02:05.653
+Let's take a look at how the front-end[br]communicates with Endpoints to
+
+0:02:05.653,0:02:07.000
+achieve that.
+
+0:02:07.000,0:02:12.220
+From the config file, app.yaml, you can[br]see that when the root URL is accessed,
+
+0:02:12.220,0:02:17.540
+the request is routed to a static_file,[br]static/index.html.
+
+0:02:17.540,0:02:20.740
+Let's take a look at that file[br]inside the static directory.
+
+0:02:20.740,0:02:23.560
+As you can see,[br]it's a pretty short piece of HTML.
+
+0:02:23.560,0:02:25.771
+It has two buttons and one input field.
+
+0:02:25.771,0:02:29.240
+What's more interesting[br]are these JavaScript includes,
+
+0:02:29.240,0:02:31.737
+although it's a static file hello.js and
+
+0:02:31.737,0:02:35.360
+it also loads this[br]Google API's JavaScript client library.
+
+0:02:35.360,0:02:40.491
+And once that's loaded, it calls an init[br]function, which is defined in hello.js.
+
+0:02:40.491,0:02:44.160
+Let's take a look at hello.js in[br]this init function specifically.
+
+0:02:44.160,0:02:48.742
+So here's the init function and it[br]initializes the GAPI client library with
+
+0:02:48.742,0:02:51.970
+the name of your endpoint,[br]helloworldendpoints.
+
+0:02:51.970,0:02:55.430
+And it is a callback,[br]which in turn initializes the buttons.
+
+0:02:55.430,0:02:59.729
+The API calls loadCallback,[br]which calls enableButtons, which sets up
+
+0:02:59.729,0:03:04.536
+the greetGenerically and greetByName[br]methods attached to the button onclick.
+
+0:03:04.536,0:03:08.105
+Which means that when the first button[br]is clicked, it calls greetGenerically,
+
+0:03:08.105,0:03:10.898
+and when the second button is clicked,[br]it calls greetByName.
+
+0:03:10.898,0:03:15.893
+And greetGenerically in turn uses[br]the GAPI client library we saw earlier,
+
+0:03:15.893,0:03:19.791
+in fact, the helloworldendpoints[br]API to call sayHello.
+
+0:03:19.791,0:03:23.576
+But on success, the request gets[br]passed back to sayHelloCallback.
+
+0:03:23.576,0:03:25.738
+GreetByName does much the same thing,
+
+0:03:25.738,0:03:28.498
+also passing the response[br]to sayHelloCallback.
+
+0:03:28.498,0:03:31.740
+And on that callback, the page displays[br]an alert with the value that was
+
+0:03:31.740,0:03:33.211
+returned by the Endpoints API.
+
+0:03:33.211,0:03:34.246
+So as you can see,
+
+0:03:34.246,0:03:38.947
+it's really easy to access an Endpoints[br]API using the GAPI JavaScript library.
+
+0:03:38.947,0:03:43.077
+But you don't need to use it because[br]you can access the endpoints for
+
+0:03:43.077,0:03:46.864
+development and testing entirely[br]through the API Explorer.
+
+0:03:46.864,0:03:50.226
+As a matter of fact, for the rest of[br]this course, you'll be working with just
+
+0:03:50.226,0:03:53.200
+the back-end code and we'll provide[br]the front-end code for you.

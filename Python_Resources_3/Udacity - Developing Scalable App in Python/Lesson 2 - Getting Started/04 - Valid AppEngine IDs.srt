@@ -1,0 +1,11 @@
+0:00:00.270,0:00:04.402
+So now that you registered a product, it's time for a quiz. Which of these
+
+0:00:04.402,0:00:09.008
+project ID's are valid and are they available? First alternative is
+
+0:00:09.008,0:00:15.210
+ud-859, hi_there, hi7 or
+
+0:00:15.210,0:00:21.010
+cheesecake0123456789, please select which are valid and which are available.

@@ -1,0 +1,32 @@
+0:00:00.000,0:00:03.481
+So you probably noticed in the[br]Conference Central code that as we build
+
+0:00:03.481,0:00:07.383
+up a query with filters, we've been[br]re-assigning the variable q like this.
+
+0:00:07.383,0:00:09.125
+But there's a somewhat[br]neater way to do this.
+
+0:00:09.125,0:00:13.513
+Every one of these filter and order[br]methods returns an updated query object.
+
+0:00:13.513,0:00:16.312
+That means we can just use[br]method chaining, like this.
+
+0:00:16.312,0:00:19.390
+We can compose a complex query[br]all on one line of code, or
+
+0:00:19.390,0:00:23.069
+a few lines of code with backslashes[br]as continuation characters.
+
+0:00:23.069,0:00:27.441
+So how would you write a query to filter[br]for conferences in Tokyo with at least
+
+0:00:27.441,0:00:32.220
+one, but less than ten seats available,[br]sorted by the number of seats available,
+
+0:00:32.220,0:00:35.247
+then by the conference name,[br]and then by the month?
+
+0:00:35.247,0:00:36.640
+Fill in the query here in Python.

@@ -1,0 +1,17 @@
+0:00:00.320,0:00:01.870
+So here we are in app.yaml.
+
+0:00:01.870,0:00:05.540
+And here's the new configuration for[br]sending confirmation email.
+
+0:00:05.540,0:00:08.960
+Then in main.py, here's the new[br]SendConfirmationEmailHandler,
+
+0:00:08.960,0:00:09.500
+which we've added.
+
+0:00:09.500,0:00:13.530
+And then in conference.py, whenever[br]a conference is created, right after
+
+0:00:13.530,0:00:16.920
+putting it into the datastore,[br]we now add the task to send the email.

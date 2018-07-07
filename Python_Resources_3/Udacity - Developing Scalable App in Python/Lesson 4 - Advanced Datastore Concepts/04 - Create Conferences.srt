@@ -1,0 +1,212 @@
+0:00:00.210,0:00:03.940
+As Magnus said, you'll now be adding the[br]functionality to create conferences to
+
+0:00:03.940,0:00:04.930
+your application.
+
+0:00:04.930,0:00:08.490
+We use a conference entity[br]class to represent conferences.
+
+0:00:08.490,0:00:11.600
+Each conference entity will be[br]created with an ancestor, or parent,
+
+0:00:11.600,0:00:14.150
+which is the profile entity[br]of the user who created it.
+
+0:00:14.150,0:00:17.450
+Let's take a look at the code for[br]the conference entity class definition.
+
+0:00:17.450,0:00:20.950
+As you can see, the class itself[br]does not have a parent property.
+
+0:00:20.950,0:00:23.970
+Why do we want conference entities[br]to have their creator's profile
+
+0:00:23.970,0:00:24.850
+as a parent?
+
+0:00:24.850,0:00:28.430
+Because this makes it very easy to[br]quickly find all the conferences that
+
+0:00:28.430,0:00:30.610
+a particular user has created.
+
+0:00:30.610,0:00:31.440
+Using NDB,
+
+0:00:31.440,0:00:35.570
+the way you create an entity with a[br]parent is that you use parent equals and
+
+0:00:35.570,0:00:39.410
+then the parent entity key when[br]creating the key for the new entity.
+
+0:00:39.410,0:00:41.600
+First you have to get the profile key,
+
+0:00:41.600,0:00:44.870
+same as you did when working with the[br]profile creation and updating methods.
+
+0:00:44.870,0:00:47.280
+Then you'll create the conference[br]key the same way, but
+
+0:00:47.280,0:00:49.100
+also specifying the parent.
+
+0:00:49.100,0:00:51.300
+Now, when you created[br]the profile entity,
+
+0:00:51.300,0:00:56.550
+you specified that the user_id should[br]be used as the ID for the entity key.
+
+0:00:56.550,0:00:59.510
+For conference entities we[br]still need a unique ID.
+
+0:00:59.510,0:01:02.840
+We don't have anything that we can[br]use for this, unlike the profile.
+
+0:01:02.840,0:01:07.440
+However, the ndb.model superclass gives[br]us the ability to create unique ID's for
+
+0:01:07.440,0:01:08.800
+any entity class.
+
+0:01:08.800,0:01:12.130
+The method for[br]doing that is called allocate_ids, and
+
+0:01:12.130,0:01:14.740
+it returns a list of unique ids.
+
+0:01:14.740,0:01:18.300
+So if we just want one we'll have[br]to access item zero of that list.
+
+0:01:18.300,0:01:22.390
+We can then define a key based on[br]that unique id and the parent key.
+
+0:01:22.390,0:01:22.970
+Okay, so
+
+0:01:22.970,0:01:26.210
+you now have the conference key, but[br]when a user creates a conference they're
+
+0:01:26.210,0:01:29.670
+going to specify a bunch of information[br]that we want to save in the data store.
+
+0:01:29.670,0:01:32.820
+And some of that user input will[br]need to be processed a bit first.
+
+0:01:32.820,0:01:34.680
+So let's take a look at[br]the conference class.
+
+0:01:34.680,0:01:38.540
+Every conference has a name, which[br]is a required field, a description,
+
+0:01:38.540,0:01:41.780
+the user ID of the organizer,[br]some set of topics,
+
+0:01:41.780,0:01:44.860
+which is a repeated field because[br]a conference could be on several topics.
+
+0:01:44.860,0:01:47.850
+It's going to be located in the city,[br]it's going to have a start date and
+
+0:01:47.850,0:01:48.650
+an end date.
+
+0:01:48.650,0:01:51.300
+For searching purposes,[br]it's also going to have a month.
+
+0:01:51.300,0:01:53.060
+Are there any conferences in June?
+
+0:01:53.060,0:01:55.410
+There's going to be[br]a number of max attendees.
+
+0:01:55.410,0:01:57.690
+How many people could possibly[br]fit in this conference?
+
+0:01:57.690,0:01:59.640
+And the number of[br]current seats available,
+
+0:01:59.640,0:02:02.430
+which will change as people register for[br]the conference.
+
+0:02:02.430,0:02:05.150
+Let's also take a look down[br]at the conference form class.
+
+0:02:05.150,0:02:08.460
+This class defines the input parameters[br]to the create conference function,
+
+0:02:08.460,0:02:10.900
+just like profile form defined[br]the input parameters for
+
+0:02:10.900,0:02:12.520
+the function save profile.
+
+0:02:12.520,0:02:14.240
+But the fields between[br]conference forum and
+
+0:02:14.240,0:02:16.700
+conference are not exactly[br]one to one the same.
+
+0:02:16.700,0:02:17.730
+So the code that handles
+
+0:02:17.730,0:02:20.300
+conference requests will have[br]to translate between them.
+
+0:02:20.300,0:02:24.030
+And since we're using the conference key[br]as part of the URL for our conference,
+
+0:02:24.030,0:02:27.730
+this code will also have to translate[br]the key into a web safe text form,
+
+0:02:27.730,0:02:29.720
+that doesn't have any[br]funny characters in it.
+
+0:02:29.720,0:02:32.390
+Now it's your turn to add the[br]functionality to create conferences to
+
+0:02:32.390,0:02:33.520
+your application.
+
+0:02:33.520,0:02:36.130
+Since there's a lot to do,[br]we've provided you templates for
+
+0:02:36.130,0:02:37.560
+the new functionality.
+
+0:02:37.560,0:02:42.420
+To get ready, copy the code from[br]ToDo_1_conference.py into the API
+
+0:02:42.420,0:02:45.010
+class in your conference.py file, and
+
+0:02:45.010,0:02:48.210
+from ToDo_1_models.py[br]into your models.py file.
+
+0:02:48.210,0:02:52.550
+You'll need to copy the conference form[br]and conference classes to models.py,
+
+0:02:52.550,0:02:57.210
+and the copy conference_2 form and[br]create conference objects functions and
+
+0:02:57.210,0:03:00.970
+the create conference endpoint[br]definition into conference.py.
+
+0:03:00.970,0:03:03.910
+Once you've copied the contents of[br]the to do files into your project
+
+0:03:03.910,0:03:06.600
+take a look at the Conference and[br]ConferenceForm classes.
+
+0:03:06.600,0:03:09.770
+Specifically, does ConferenceForm have[br]properties that map to the following
+
+0:03:09.770,0:03:11.280
+Conference properties?
+
+0:03:11.280,0:03:13.620
+Name, topics, parent and month.
+
+0:03:13.620,0:03:15.220
+Check off the ones that it does.

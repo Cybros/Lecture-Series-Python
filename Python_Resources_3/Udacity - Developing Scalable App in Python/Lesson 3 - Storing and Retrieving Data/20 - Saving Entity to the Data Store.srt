@@ -1,0 +1,14 @@
+0:00:00.210,0:00:04.170
+So, when we saved a new profile and look[br]in the data store, we see fields for
+
+0:00:04.170,0:00:07.050
+Display Name, and[br]Tee Shirt Size, and Main Email.
+
+0:00:07.050,0:00:09.040
+We don't see any User ID field.
+
+0:00:09.040,0:00:12.430
+That's because we used the User ID to[br]create the key for the entity, but
+
+0:00:12.430,0:00:13.980
+it's not stored as a separate property.

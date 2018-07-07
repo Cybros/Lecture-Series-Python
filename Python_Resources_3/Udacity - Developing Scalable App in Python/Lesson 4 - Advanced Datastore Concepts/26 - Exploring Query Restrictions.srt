@@ -1,0 +1,50 @@
+0:00:00.000,0:00:03.136
+So if you're used to more flexible[br]query languages, like SQL,
+
+0:00:03.136,0:00:05.413
+these limitations may[br]come as a big surprise.
+
+0:00:05.413,0:00:06.914
+To understand them a bit more,
+
+0:00:06.914,0:00:10.045
+let's change up our query here[br]in the query playground method.
+
+0:00:10.045,0:00:14.493
+Let's say that instead of querying for[br]June, let's filter for big conferences.
+
+0:00:14.493,0:00:20.439
+Let's say conferences whose[br]maxAttendees is greater than 10.
+
+0:00:20.439,0:00:23.187
+And save this and[br]then try this one out on localhost,
+
+0:00:23.187,0:00:26.071
+just to prove that it's not[br]an index related problem.
+
+0:00:26.071,0:00:29.159
+Once this is up and running,[br]we'll go to the API's explorer.
+
+0:00:29.159,0:00:32.642
+Filter playground on local host,[br]execute, and we get an error.
+
+0:00:32.642,0:00:35.684
+Once again, the error message we[br]see here is not very informative.
+
+0:00:35.684,0:00:38.633
+But if you take a look at the logs,[br]you'll see something else.
+
+0:00:38.633,0:00:41.015
+Based on the logs,[br]what's the cause of this error?
+
+0:00:41.015,0:00:43.011
+Is it that a composite[br]index doesn't exist?
+
+0:00:43.011,0:00:44.682
+Is it that the sort order is named but
+
+0:00:44.682,0:00:46.752
+the inequality filter[br]is on maxAttendees?
+
+0:00:46.752,0:00:49.270
+Or is it too many inequality[br]filters in one query?

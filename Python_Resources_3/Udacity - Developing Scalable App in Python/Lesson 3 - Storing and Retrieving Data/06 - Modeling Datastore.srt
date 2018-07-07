@@ -1,0 +1,11 @@
+0:00:00.570,0:00:03.410
+All right, let's do a quiz. Imagine that we are
+
+0:00:03.410,0:00:06.650
+modeling sports league in data store. Which of the following would
+
+0:00:06.650,0:00:13.018
+be best represented at a kind, entity or property? A team, a game, the
+
+0:00:13.018,0:00:19.190
+winning team, a player, a player name.

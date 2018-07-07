@@ -1,0 +1,53 @@
+0:00:00.250,0:00:03.220
+Okay, let's look at the solution. What about optimized
+
+0:00:03.220,0:00:06.480
+app code? Well that's about making the code actually
+
+0:00:06.480,0:00:09.760
+run faster. App stats is the best option for
+
+0:00:09.760,0:00:13.530
+that. What about reduced latency for static content? Well doing
+
+0:00:13.530,0:00:16.500
+this would involve reducing the latency to the user.
+
+0:00:16.500,0:00:19.980
+A perfect example of edge caching. What about making your
+
+0:00:19.980,0:00:22.830
+app more responsive? Well, certainly queues could be an
+
+0:00:22.830,0:00:25.460
+option here to reduce the amount of time spent when
+
+0:00:25.460,0:00:27.920
+you process the request. But that could also
+
+0:00:27.920,0:00:31.780
+achieved using automatic scaling parameters, and of course mem
+
+0:00:31.780,0:00:34.405
+cache to serve content from memory instead of
+
+0:00:34.405,0:00:38.990
+datastore. What about reducing datastore reads? Well certainly, mem
+
+0:00:38.990,0:00:41.750
+cache would help out here, but edge caching
+
+0:00:41.750,0:00:43.750
+could also be an option if the content is
+
+0:00:43.750,0:00:47.050
+suitable for that. What about improving performance as
+
+0:00:47.050,0:00:50.497
+user base grows? Well, that's a clear cut scaling
+
+0:00:50.497,0:00:55.320
+out problem, so automatic scaling. All right, I hope you did well. And this quiz
+
+0:00:55.320,0:00:59.480
+has no exact answers. So be sure to discuss this in the forums as well.

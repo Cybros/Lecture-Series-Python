@@ -1,0 +1,50 @@
+0:00:00.220,0:00:03.610
+So here are the answers. A package delivery service sounds
+
+0:00:03.610,0:00:07.220
+like a pull queue because each package is probably delivered by
+
+0:00:07.220,0:00:10.680
+independent workers that can pull tasks from the queue. What
+
+0:00:10.680,0:00:13.500
+about checking in for a flight? Well I would like to
+
+0:00:13.500,0:00:15.810
+know that I'm checked in, and in that case it's
+
+0:00:15.810,0:00:19.460
+neither a push queue nor a pull queue. Then the confirmation
+
+0:00:19.460,0:00:22.630
+would be delivered as part of the http response, even if
+
+0:00:22.630,0:00:25.490
+it takes a little bit of time. This is a situation
+
+0:00:25.490,0:00:28.050
+very similar to when you buy things using a credit
+
+0:00:28.050,0:00:30.840
+card on the internet, where you also often wait for
+
+0:00:30.840,0:00:34.460
+the response. What about code review? Well a code review
+
+0:00:34.460,0:00:37.680
+sounds like a pull queue, because you probably have many people
+
+0:00:37.680,0:00:40.500
+that can review the code, so the first one that's
+
+0:00:40.500,0:00:44.010
+available can pull the code review from the queue. And then
+
+0:00:44.010,0:00:46.690
+batch processing of images, which sounds like a push queue.
+
+0:00:47.710,0:00:50.530
+This is because your code is probably doing the processing of
+
+0:00:50.530,0:00:53.340
+the images. Therefore you want to have control over the execution.

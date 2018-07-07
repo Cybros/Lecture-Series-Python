@@ -1,0 +1,65 @@
+0:00:00.000,0:00:03.936
+Up ahead in this course, you'll be using[br]a Python language feature that you might
+
+0:00:03.936,0:00:05.373
+not have seen much of before.
+
+0:00:05.373,0:00:08.074
+This feature is called[br]the decorator syntax.
+
+0:00:08.074,0:00:11.612
+If you're already comfortable with[br]decorators, feel free to skip ahead.
+
+0:00:11.612,0:00:13.875
+A decorator is way of[br]modifying a function or
+
+0:00:13.875,0:00:16.819
+class definition by wrapping[br]it with another function.
+
+0:00:16.819,0:00:19.817
+A decorator can modify how[br]the decorated code works or
+
+0:00:19.817,0:00:22.556
+even hook it up to other[br]pieces of code entirely.
+
+0:00:22.556,0:00:25.529
+For instance, to register a class[br]as being part of an API or
+
+0:00:25.529,0:00:27.728
+to connect a function[br]up with a framework.
+
+0:00:27.728,0:00:30.197
+Here's what a decorator call looks like.
+
+0:00:30.197,0:00:34.101
+You will always appear on the line[br]before a def or class block.
+
+0:00:34.101,0:00:37.150
+That is before a function or[br]a class definition and
+
+0:00:37.150,0:00:39.409
+it will always start with an at sign.
+
+0:00:39.409,0:00:43.210
+And some decorators have arguments[br]of their own while others don't.
+
+0:00:43.210,0:00:46.640
+The decorator syntax is a shortcut for[br]calling a function that wraps
+
+0:00:46.640,0:00:49.116
+the function or[br]class that's being decorated.
+
+0:00:49.116,0:00:53.176
+Right after the function somefunc is[br]defined, Python will call the function
+
+0:00:53.176,0:00:56.057
+special to wrap that function[br]up with extra behavior.
+
+0:00:56.057,0:00:57.825
+Hey, how about you try it out?
+
+0:00:57.825,0:01:00.878
+Up ahead, you'll see a piece of code[br]that you can add a decorator to,
+
+0:01:00.878,0:01:04.370
+then you can tab over and take a look at[br]the source code of the decorator itself.

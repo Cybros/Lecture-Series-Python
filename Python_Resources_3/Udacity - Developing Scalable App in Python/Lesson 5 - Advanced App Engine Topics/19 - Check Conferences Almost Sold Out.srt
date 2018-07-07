@@ -1,0 +1,98 @@
+0:00:00.140,0:00:03.300
+In this exercise,[br]you'll set up a cron job to periodically
+
+0:00:03.300,0:00:06.950
+update the announcement about[br]conferences that are almost sold out.
+
+0:00:06.950,0:00:09.550
+Since you've already written[br]the function to create the announcement,
+
+0:00:09.550,0:00:12.790
+pretty much all you're going to need[br]to do is to configure the cron job.
+
+0:00:12.790,0:00:16.370
+And you do that in a configuration[br]file called cron.yaml.
+
+0:00:16.370,0:00:20.630
+So you need to create a new file in your[br]project directory called cron.yaml, and
+
+0:00:20.630,0:00:21.920
+to find the cron job.
+
+0:00:21.920,0:00:26.050
+You need to provide the URL and[br]schedule, and option lay description.
+
+0:00:26.050,0:00:28.970
+The URL is the path to[br]the task to be run.
+
+0:00:28.970,0:00:31.750
+The description, which is optional,[br]describes the task so
+
+0:00:31.750,0:00:33.735
+you can figure out later what[br]your code was supposed to do.
+
+0:00:33.735,0:00:36.995
+And the schedule indicates[br]how often to run the task.
+
+0:00:36.995,0:00:39.445
+There are a variety of ways[br]to set the schedule, but
+
+0:00:39.445,0:00:41.985
+you must strictly follow the syntax or[br]the cron job won't run.
+
+0:00:41.985,0:00:45.705
+I recommend checking the format for[br]the schedule in the developer docks.
+
+0:00:45.705,0:00:48.475
+Note this says every 1 hours.
+
+0:00:48.475,0:00:51.725
+It would sound correct if you were[br]saying every 12 hours or every 2
+
+0:00:51.725,0:00:56.500
+hours but it turns out that even for 1,[br]you have to say every 1 hours, not hour.
+
+0:00:56.500,0:01:01.370
+You can see the defined cron jobs in the[br]cron job tab in the task queue section.
+
+0:01:01.370,0:01:04.180
+You can see the schedule, and[br]when it was last run, and
+
+0:01:04.180,0:01:07.150
+whether it was successful, and[br]you can also trigger to run it manually.
+
+0:01:07.150,0:01:11.010
+And now for your task in the exercise,[br]you should create the config file and
+
+0:01:11.010,0:01:15.550
+make it run, the /crons/set_announcement[br]URL every minute so
+
+0:01:15.550,0:01:16.770
+you can see it working.
+
+0:01:16.770,0:01:19.920
+But after you've tested your cron job,[br]you should set it to run much less
+
+0:01:19.920,0:01:22.290
+often, for example,[br]once every hour or two.
+
+0:01:22.290,0:01:25.160
+In general, you shouldn't run cron[br]jobs more often than necessary,
+
+0:01:25.160,0:01:27.310
+as they do consume resources and quota.
+
+0:01:27.310,0:01:29.650
+So after you complete each step here,[br]check it off.
+
+0:01:29.650,0:01:32.610
+Make sure, again, to change your[br]cron job from every minute to
+
+0:01:32.610,0:01:34.710
+every hour after you've seen it run.
+
+0:01:34.710,0:01:38.380
+And then, as a syntax check, how would[br]you schedule it to run every two hours?
+
+0:01:38.380,0:01:39.190
+Put that down here.

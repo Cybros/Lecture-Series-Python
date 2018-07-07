@@ -1,0 +1,50 @@
+0:00:00.450,0:00:03.630
+The good news is that NDB[br]manages caches for you.
+
+0:00:03.630,0:00:07.130
+There are two caching levels,[br]an in-context cache and memcache.
+
+0:00:07.130,0:00:10.550
+Both caches are enabled by default for[br]all entity types but
+
+0:00:10.550,0:00:12.740
+can be configured to[br]suit advanced needs.
+
+0:00:12.740,0:00:16.460
+For most applications, you can just[br]allow NDB to manage the caches and
+
+0:00:16.460,0:00:17.990
+leave the default settings on.
+
+0:00:17.990,0:00:19.890
+When you've deployed[br]your app to appspot,
+
+0:00:19.890,0:00:23.660
+you can see what entries are in Memcache[br]by going to the Memcache viewer.
+
+0:00:23.660,0:00:25.300
+If you used the application recently,
+
+0:00:25.300,0:00:27.960
+there may already be some[br]entries in the cache.
+
+0:00:27.960,0:00:32.240
+If you don't see anything, or if you see[br]items in cache zero, open the web front
+
+0:00:32.240,0:00:35.730
+end, make sure you have some[br]conferences created, and browse around.
+
+0:00:35.730,0:00:37.820
+For instance,[br]look at conference details.
+
+0:00:37.820,0:00:39.930
+Then refresh the Memcache viewer and
+
+0:00:39.930,0:00:41.740
+you should see that there[br]are some entries there.
+
+0:00:41.740,0:00:43.660
+After you've explored[br]the Memcashe viewer,
+
+0:00:43.660,0:00:46.430
+can you check which of the following[br]information you can see there?

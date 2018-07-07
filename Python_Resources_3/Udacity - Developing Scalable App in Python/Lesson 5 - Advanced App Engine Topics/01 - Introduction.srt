@@ -1,0 +1,56 @@
+0:00:00.560,0:00:03.116
+I'm standing here by the Google Corkboard
+
+0:00:03.116,0:00:07.520
+Server Rack. This server rack was built in
+
+0:00:07.520,0:00:10.840
+1999 by Google employees simply because you
+
+0:00:10.840,0:00:13.770
+could not buy the computers required to achieve
+
+0:00:13.770,0:00:17.390
+the scale, reliability, and performance that Google
+
+0:00:17.390,0:00:20.770
+required. Each row here, has eight hard drives
+
+0:00:20.770,0:00:25.880
+on it, and four complete PCs. And there is a cork mat, to shield the electronics
+
+0:00:25.880,0:00:28.370
+from the metal frame that carries the row up.
+
+0:00:28.370,0:00:31.130
+That's why it was called the Google Corkboard Server
+
+0:00:31.130,0:00:34.480
+Rack. When your application runs on the Google Cloud
+
+0:00:34.480,0:00:36.720
+platform, you can be sure it runs on the
+
+0:00:36.720,0:00:41.140
+latest and best hardware. Well, perhaps not this version
+
+0:00:41.140,0:00:45.510
+from 1999. But the latest version that we built.
+
+0:00:45.510,0:00:48.410
+So, in this lesson we're going to cover the heavy
+
+0:00:48.410,0:00:51.710
+duty stuff. We'll start it off by looking at memcash,
+
+0:00:51.710,0:00:55.370
+a great way to optimize the performance of your application, then we'll
+
+0:00:55.370,0:00:58.975
+look at background jobs. In the form of push queues, pull queues,
+
+0:00:58.975,0:01:01.840
+and cron jobs and we'll wrap it up by looking at some
+
+0:01:01.840,0:01:06.930
+of the scaling and tuning parameters for appendium. Let's get started, shall we?

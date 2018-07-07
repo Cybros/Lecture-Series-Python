@@ -1,0 +1,23 @@
+0:00:00.170,0:00:02.770
+So there's still one more feature[br]that you could add to the project
+
+0:00:02.770,0:00:06.060
+to round out the functionality[br]around registering for a conference.
+
+0:00:06.060,0:00:09.320
+One obvious gap is that[br]currently there's no way to
+
+0:00:09.320,0:00:11.360
+unregister from a conference.
+
+0:00:11.360,0:00:13.420
+Feel free to add the end points method,
+
+0:00:13.420,0:00:16.040
+unregister from conference if you're so[br]inclined.
+
+0:00:16.040,0:00:18.390
+Take a look at the conference[br]registration function.
+
+0:00:18.390,0:00:19.710
+It will be helpful in doing this.

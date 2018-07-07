@@ -1,0 +1,20 @@
+0:00:00.260,0:00:00.979
+Okay, so here we go.
+
+0:00:00.979,0:00:04.885
+We're looping over all the conferences[br]returned from a conference query with
+
+0:00:04.885,0:00:08.386
+no filters, putting them in[br]ConferenceForms, and returning that.
+
+0:00:08.386,0:00:09.245
+So this works fine.
+
+0:00:09.245,0:00:11.459
+And now we can go ahead and[br]add some more queries,
+
+0:00:11.459,0:00:13.518
+like showing conferences[br]the user created.
+
+0:00:13.518,0:00:14.810
+Let's do that next.

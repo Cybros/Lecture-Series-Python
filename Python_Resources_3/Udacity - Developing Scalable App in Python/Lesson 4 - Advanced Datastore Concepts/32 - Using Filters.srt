@@ -1,0 +1,20 @@
+0:00:00.180,0:00:02.660
+Okay, so not a very big change there.
+
+0:00:02.660,0:00:04.510
+But if you deploy this, wait for
+
+0:00:04.510,0:00:09.460
+it to deploy, then go to your app and[br]add a filter, hit Search, and it works.
+
+0:00:09.460,0:00:12.550
+Now, if you happen to notice[br]that a particular filter or
+
+0:00:12.550,0:00:16.610
+combination of filters yields an error,[br]well take a look in your logs, and
+
+0:00:16.610,0:00:19.920
+you might see something familiar[br]from a previous part of the lesson.
+
+0:00:19.920,0:00:21.960
+And you can fix that in the way[br]that we discussed earlier.

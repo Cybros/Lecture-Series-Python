@@ -1,0 +1,95 @@
+0:00:00.310,0:00:02.480
+Let's start off by looking at two important
+
+0:00:02.480,0:00:04.750
+data relationships when you do modeling in data
+
+0:00:04.750,0:00:10.480
+store. They are ancestor relationships and has-a relationships.
+
+0:00:10.480,0:00:13.960
+Starting off with the ancestor relationship in data store
+
+0:00:13.960,0:00:16.190
+it is possible to specify that an entity
+
+0:00:16.190,0:00:19.970
+has an ancestor entity. There are two important
+
+0:00:19.970,0:00:23.180
+rules for ancestor relationships. First of all, it
+
+0:00:23.180,0:00:25.620
+needs to be assigned when the entity is created.
+
+0:00:26.750,0:00:29.860
+And secondly it can never be changed so
+
+0:00:29.860,0:00:32.060
+those are things to think about when you model
+
+0:00:32.060,0:00:35.960
+an ancestor relationship. And given those rules, please note
+
+0:00:35.960,0:00:38.860
+that the ancestor relationship is not the same as
+
+0:00:38.860,0:00:42.900
+the is-a relationship in object oriented modeling. In conference
+
+0:00:42.900,0:00:45.790
+central, we will use the ancestor relationship for the
+
+0:00:45.790,0:00:49.130
+conference kind that you will create shortly. Where the
+
+0:00:49.130,0:00:53.030
+ancestor will be the user who created the conference.
+
+0:00:53.030,0:00:56.270
+Technically speaking though since the users are identified
+
+0:00:56.270,0:00:59.720
+through their profile entities, so in this case the
+
+0:00:59.720,0:01:01.740
+conferences will have the key of the profile
+
+0:01:01.740,0:01:06.120
+entity as their ancestor key. The other relationship we
+
+0:01:06.120,0:01:09.770
+will be using is the has-a relationship. We
+
+0:01:09.770,0:01:13.020
+will be using this relationship to model conferences which
+
+0:01:13.020,0:01:15.560
+users are attending. To do this we will
+
+0:01:15.560,0:01:18.460
+add a property to the profile entity which specifies
+
+0:01:18.460,0:01:22.150
+the attended conferences. So each profile will have
+
+0:01:22.150,0:01:24.970
+a property that contains the conferences that they are
+
+0:01:24.970,0:01:29.128
+attending, observe that this relationship can easily change.
+
+0:01:29.128,0:01:32.040
+We can deregister from conferences and register to new
+
+0:01:32.040,0:01:34.000
+ones, so it is not bounded by the
+
+0:01:34.000,0:01:37.570
+strict rules of the ancestor relationship. So those are
+
+0:01:37.570,0:01:40.010
+the basics of these relationships and that's also
+
+0:01:40.010,0:01:42.330
+enough theory for now. Time to do some coding.

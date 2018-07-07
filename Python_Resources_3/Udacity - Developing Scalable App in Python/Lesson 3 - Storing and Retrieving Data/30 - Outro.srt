@@ -1,0 +1,17 @@
+0:00:00.025,0:00:01.390
+Congratulations. We're now at the end of
+
+0:00:01.390,0:00:04.350
+lesson three. In this lesson, we got introduced
+
+0:00:04.350,0:00:08.680
+to Data Store, and kinds, entities, properties,
+
+0:00:08.680,0:00:11.660
+and keys. We also looked at the profile
+
+0:00:11.660,0:00:16.640
+kind and saved it to the data store and retrieved it from the data store. In the
+
+0:00:16.640,0:00:21.740
+next lesson, we will cover data store in a lot more detail. Let's go.

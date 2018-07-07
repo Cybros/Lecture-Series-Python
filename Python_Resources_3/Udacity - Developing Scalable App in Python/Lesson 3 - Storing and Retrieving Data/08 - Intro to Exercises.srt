@@ -1,0 +1,29 @@
+0:00:00.740,0:00:03.910
+In this lesson you'll learn[br]how to define entity classes.
+
+0:00:03.910,0:00:08.109
+We'll use an entity class called[br]Profile to save user profiles.
+
+0:00:08.109,0:00:11.290
+You'll learn how to get a user ID for[br]the logged in user so
+
+0:00:11.290,0:00:14.730
+you can use it as the unique ID for[br]the entity's key.
+
+0:00:14.730,0:00:17.520
+We'll explore the entities in the data[br]store by using the data store
+
+0:00:17.520,0:00:19.400
+viewer in the Admin Console.
+
+0:00:19.400,0:00:22.220
+And it's not much good putting data[br]into the data store if we can't get
+
+0:00:22.220,0:00:23.430
+it back out.
+
+0:00:23.430,0:00:27.040
+So you'll learn how to get the profile[br]entities back out of the datastore.
+
+0:00:27.040,0:00:27.810
+So let's get into that.

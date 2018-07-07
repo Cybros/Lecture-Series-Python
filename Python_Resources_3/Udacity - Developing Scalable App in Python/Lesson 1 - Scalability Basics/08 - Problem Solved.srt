@@ -1,0 +1,140 @@
+0:00:00.310,0:00:02.300
+Let's take a closer look if we have solved
+
+0:00:02.300,0:00:05.950
+the problem. First of all, virtual machines are nowadays
+
+0:00:05.950,0:00:09.100
+a standard offering by any cloud service provider. You
+
+0:00:09.100,0:00:11.780
+rent any number of virtual machines. And you pay by
+
+0:00:11.780,0:00:14.650
+the hour, or minute or so. This is called
+
+0:00:14.650,0:00:18.500
+IaaS, or Infrastructure as a Service. This is, because a
+
+0:00:18.500,0:00:21.630
+computer and therefore also a virtual machine, can be
+
+0:00:21.630,0:00:25.940
+considered infrastructure today. So getting back to our original picture.
+
+0:00:25.940,0:00:29.200
+Problem solved, right? We could use standard virtual
+
+0:00:29.200,0:00:32.990
+machines from any cloud service provider. And achieve unlimited
+
+0:00:32.990,0:00:37.110
+scalability by distributing the execution of our application, across
+
+0:00:37.110,0:00:39.820
+these virtual machines. On a high level, it may
+
+0:00:39.820,0:00:41.920
+appear so. But let's look at what you
+
+0:00:41.920,0:00:45.040
+need to do to actually realize this architecture. And
+
+0:00:45.040,0:00:47.600
+as it turns out, creating this architecture for your
+
+0:00:47.600,0:00:52.030
+application is a very complicated and resource intensive problem.
+
+0:00:52.030,0:00:56.030
+Let's look at some of the things you need to think about and take care of.
+
+0:00:56.030,0:00:59.070
+VM Management. Starting and stopping the virtual machine.
+
+0:00:59.070,0:01:01.510
+Operating system images. Software
+
+0:01:01.510,0:01:05.250
+management. Installing, patching and upgrading.
+
+0:01:05.250,0:01:08.350
+A powerful web server. Installing it and configuring
+
+0:01:08.350,0:01:11.350
+it for the correct settings. A distributed database
+
+0:01:11.350,0:01:13.180
+where you can read and write data, from
+
+0:01:13.180,0:01:16.980
+all of your virtual machines. A distributed file system,
+
+0:01:16.980,0:01:20.380
+where you can read and write data which is accessible from all your virtual
+
+0:01:20.380,0:01:24.340
+machines. Application monitoring, with a consolidated view
+
+0:01:24.340,0:01:27.250
+of any problems occurring in your distributed execution
+
+0:01:27.250,0:01:31.900
+environment. Availability including data replication, hardware software
+
+0:01:31.900,0:01:36.030
+resilience, geographic disaster recovery strategies. Back ups, recovery,
+
+0:01:36.030,0:01:39.350
+automatic fail overs, et cetera. Security set
+
+0:01:39.350,0:01:42.900
+up and management in your distributed execution environment.
+
+0:01:42.900,0:01:45.790
+And load balancing. How to spread the load across the
+
+0:01:45.790,0:01:49.430
+VMs, including application level session management. And all of the
+
+0:01:49.430,0:01:51.400
+other things that we did not have space to list
+
+0:01:51.400,0:01:55.250
+here. As you can see, this is an extremely complex problem
+
+0:01:55.250,0:01:58.000
+to solve in a scalable way. So even though our
+
+0:01:58.000,0:02:00.510
+solution looked good on a high level. We have now
+
+0:02:00.510,0:02:04.450
+created an architecture that requires a monumental engineering effort to
+
+0:02:04.450,0:02:07.620
+realize. At the same time, as you have limited amount of
+
+0:02:07.620,0:02:11.470
+time and resources. Remember that we started the service
+
+0:02:11.470,0:02:14.100
+side history, by looking at the server sitting under the
+
+0:02:14.100,0:02:17.800
+office desk. And sadly enough, for many projects we
+
+0:02:17.800,0:02:20.590
+have reached a present day. These are the challenges many
+
+0:02:20.590,0:02:23.070
+projects are facing today, when trying to build scalable
+
+0:02:23.070,0:02:26.610
+systems. Now, let's do a reality check with a question
+
+0:02:26.610,0:02:30.140
+for you. Since you have limited time and resources, select
+
+0:02:30.140,0:02:33.300
+three of these problems you would prioritize over the others.

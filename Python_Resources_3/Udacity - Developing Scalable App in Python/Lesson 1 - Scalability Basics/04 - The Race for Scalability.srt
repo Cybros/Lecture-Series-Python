@@ -1,0 +1,50 @@
+0:00:00.240,0:00:02.670
+Okay, let's continue our story on the history of
+
+0:00:02.670,0:00:06.740
+server side computing. At this time we enter the race
+
+0:00:06.740,0:00:10.530
+for scalability. Because once the computer rack was created,
+
+0:00:10.530,0:00:12.610
+we could start to stack servers on top of each
+
+0:00:12.610,0:00:15.150
+other to save space. And this was of course
+
+0:00:15.150,0:00:19.960
+great. But now, another problem surfaced. Because even though these
+
+0:00:19.960,0:00:22.500
+servers were great from a stacking perspective, it was
+
+0:00:22.500,0:00:25.290
+still the case that one application could only run on
+
+0:00:25.290,0:00:28.489
+one server. And this became a big problem,
+
+0:00:28.489,0:00:31.921
+because as the internet grew, these applications got
+
+0:00:31.921,0:00:34.326
+more and more popular. And more and more
+
+0:00:34.326,0:00:39.230
+popular. And more and more popular! And since
+
+0:00:39.230,0:00:40.790
+there is a limit to the performance of
+
+0:00:40.790,0:00:44.250
+one server, this architecture was not sustainable and
+
+0:00:44.250,0:00:47.320
+had to be abandoned. The one application, one
+
+0:00:47.320,0:00:51.170
+server strategy was a dead end street and
+
+0:00:51.170,0:00:53.260
+a radically new solution was required

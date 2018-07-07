@@ -1,0 +1,62 @@
+0:00:00.280,0:00:01.770
+It's time for an exercise.
+
+0:00:01.770,0:00:04.490
+This time we'll explore indexes[br]in your app, and specifically,
+
+0:00:04.490,0:00:06.510
+we'll look at composite index creation.
+
+0:00:06.510,0:00:09.370
+We're going to deploy a query[br]that needs a composite index
+
+0:00:09.370,0:00:11.370
+without first running it[br]on the development server.
+
+0:00:11.370,0:00:13.890
+Then we'll fix it by running it[br]on the development server and
+
+0:00:13.890,0:00:17.000
+look at the index file and[br]deploy and see that it works then.
+
+0:00:17.000,0:00:20.590
+So, first, let's see what happens if[br]you deploy an application to app spot
+
+0:00:20.590,0:00:23.040
+that requires a new index,[br]but you don't have it.
+
+0:00:23.040,0:00:27.570
+So we're going to add a filter[br]to our app, asking only for
+
+0:00:27.570,0:00:29.610
+conferences in the month of June.
+
+0:00:29.610,0:00:32.110
+Number six is June.
+
+0:00:32.110,0:00:34.250
+Once you add this filter,[br]save your file and
+
+0:00:34.250,0:00:36.470
+go ahead and[br]deploy it directly to app spot.
+
+0:00:36.470,0:00:40.160
+In this case,[br]do not run it on local host first.
+
+0:00:40.160,0:00:43.090
+So don't hit the run button[br]just go straight to deploy.
+
+0:00:43.090,0:00:46.460
+And once the logs say that your[br]application has been deployed
+
+0:00:46.460,0:00:50.250
+go the API's explorer, make sure[br]that you're on the deployed app and
+
+0:00:50.250,0:00:51.590
+not local host.
+
+0:00:51.590,0:00:54.230
+Go to the filter playground method and[br]execute it.
+
+0:00:54.230,0:00:54.870
+What happens?

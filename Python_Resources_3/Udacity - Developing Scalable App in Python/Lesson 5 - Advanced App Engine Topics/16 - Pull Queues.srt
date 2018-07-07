@@ -1,0 +1,11 @@
+0:00:00.130,0:00:02.590
+For the following examples, which queue would you
+
+0:00:02.590,0:00:06.630
+use, Push or Pull? Select the best option
+
+0:00:06.630,0:00:09.400
+for a Package Delivery Service, a Flight Check
+
+0:00:09.400,0:00:13.160
+In, a Code Review, or Batch Processing of Images.

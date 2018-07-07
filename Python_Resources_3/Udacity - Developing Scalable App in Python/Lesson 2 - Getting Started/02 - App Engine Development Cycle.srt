@@ -1,0 +1,155 @@
+0:00:00.300,0:00:02.440
+The first question you'll probably ask yourself at this
+
+0:00:02.440,0:00:04.890
+point. How do I access App Engine in the
+
+0:00:04.890,0:00:07.490
+first place? Well that is a pretty important question
+
+0:00:07.490,0:00:09.760
+to answer. And we're happy to tell you that it's
+
+0:00:09.760,0:00:13.720
+super easy. So first of all, here you are.
+
+0:00:13.720,0:00:17.190
+A star developer. And you should already have a
+
+0:00:17.190,0:00:21.410
+Google account, that you probably use for many different
+
+0:00:21.410,0:00:25.390
+Google services. Such as Gmail, YouTube, Google Plus, et cetera.
+
+0:00:26.440,0:00:29.690
+Well, guess what? Your standard Google account also allows you
+
+0:00:29.690,0:00:32.540
+to create app engine applications that run on the Google
+
+0:00:32.540,0:00:36.090
+cloud platform. So there is no additional account required. What
+
+0:00:36.090,0:00:38.590
+you do is simply log on to the developers console
+
+0:00:38.590,0:00:41.450
+that we will go through later. And register the App
+
+0:00:41.450,0:00:45.120
+Engine applications you want to create. And once you've done
+
+0:00:45.120,0:00:48.050
+that, the time has come for you to create those
+
+0:00:48.050,0:00:51.170
+great cloud applications. So you need to sit down, and
+
+0:00:51.170,0:00:54.190
+hack, and hack. And hack, and hack until you
+
+0:00:54.190,0:00:57.070
+have something awesome that you want to test. And then
+
+0:00:57.070,0:00:59.310
+you can fire up an instance of App Engine, which
+
+0:00:59.310,0:01:02.690
+runs on your local development machine. And that is of
+
+0:01:02.690,0:01:05.620
+course, great. Since it allows you to use all your
+
+0:01:05.620,0:01:09.150
+standard tools. Such as debuggers and providers to get those
+
+0:01:09.150,0:01:12.740
+bugs out. And once you've done that, it's time to
+
+0:01:12.740,0:01:16.340
+run your applications on computers in the Google data centers.
+
+0:01:16.340,0:01:17.920
+So, with just a click or two, you can
+
+0:01:17.920,0:01:20.961
+deploy all of that great code to App Engine. And
+
+0:01:20.961,0:01:24.670
+of course, you can have many applications running there. And
+
+0:01:24.670,0:01:27.670
+when you and your front-end developer friend have finished your
+
+0:01:27.670,0:01:30.850
+application. You tell all your users about how cool
+
+0:01:30.850,0:01:33.650
+it is, and that they can start using it. And
+
+0:01:33.650,0:01:36.970
+when you use App Engine, it's very easy to support
+
+0:01:36.970,0:01:41.330
+any kind of device and operating system. Computers, smartphones, tablets.
+
+0:01:41.330,0:01:44.650
+You name it. And hopefully, the users will think
+
+0:01:44.650,0:01:47.740
+your application is so cool, that they will tell their
+
+0:01:47.740,0:01:50.660
+friends about how cool it is. And hopefully they will
+
+0:01:50.660,0:01:54.660
+tell their friends. And your application goes all viral. And
+
+0:01:54.660,0:01:57.800
+you get all of these great ratings and recognitions. And
+
+0:01:57.800,0:02:01.100
+awards and stuff. But you don't need to worry about
+
+0:02:01.100,0:02:04.280
+your site going down because it has become so popular,
+
+0:02:04.280,0:02:06.390
+since you built it on the Google cloud. It will
+
+0:02:06.390,0:02:10.990
+scale and scale, and scale on the Google infrastructure.
+
+0:02:10.990,0:02:13.020
+So you get to feel like a million bucks. And
+
+0:02:13.020,0:02:16.120
+become a rock start developer that everyone wants to be
+
+0:02:16.120,0:02:19.850
+with. This is exactly what we would like to happen.
+
+0:02:19.850,0:02:22.780
+And that's really what this is all about. App Engine
+
+0:02:22.780,0:02:26.470
+and Google cloud platform, allows you to create applications that
+
+0:02:26.470,0:02:28.990
+run in Google data centers. And can be used by
+
+0:02:28.990,0:02:31.860
+any device. So you can sit with your laptop and
+
+0:02:31.860,0:02:34.270
+create apps that scale to serve billions of
+
+0:02:34.270,0:02:37.270
+users worldwide. It's really, really cool when you think
+
+0:02:37.270,0:02:39.950
+about it. Well, hang in there. Because you're
+
+0:02:39.950,0:02:42.670
+just about to create your first App Engine project.

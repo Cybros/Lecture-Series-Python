@@ -1,0 +1,47 @@
+0:00:00.130,0:00:02.910
+Well, a recipe is not an entity but[br]that's close.
+
+0:00:02.910,0:00:04.880
+An entity would be[br]an individual incident.
+
+0:00:04.880,0:00:08.420
+Something like a chocolate cake[br]recipe or a rhubarb pie recipe.
+
+0:00:08.420,0:00:10.940
+Those entities are examples or[br]incidences of a recipe.
+
+0:00:10.940,0:00:13.100
+But recipe itself isn't an entity.
+
+0:00:13.100,0:00:16.040
+Just as the ent type[br]isn't itself an integer.
+
+0:00:16.040,0:00:18.980
+So yeah that means that recipes[br]match the definition of a kind.
+
+0:00:18.980,0:00:21.710
+It answers the questions[br]of what kinds of objects or
+
+0:00:21.710,0:00:23.090
+entities are we going to make here.
+
+0:00:23.090,0:00:25.240
+And how do we represent kinds in code?
+
+0:00:25.240,0:00:28.480
+Well, kinds are just theoretical[br]concepts from the app engine data store
+
+0:00:28.480,0:00:33.470
+but classes are the blueprints that we[br]use in our code to make instances from.
+
+0:00:33.470,0:00:35.670
+So class is also a correct answer.
+
+0:00:35.670,0:00:38.790
+Finally we just talked about properties[br]above in our name, ingredients,
+
+0:00:38.790,0:00:40.340
+instructions, and so forth.
+
+0:00:40.340,0:00:42.360
+Those are properties so[br]recipe is not a property.

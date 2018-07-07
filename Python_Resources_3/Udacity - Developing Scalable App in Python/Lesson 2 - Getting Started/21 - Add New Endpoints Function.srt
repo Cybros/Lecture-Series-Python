@@ -1,0 +1,23 @@
+0:00:00.160,0:00:01.460
+There are two things to do.
+
+0:00:01.460,0:00:05.440
+Your end points method need to accept[br]two arguments, period and name.
+
+0:00:05.440,0:00:06.530
+Both of them are strings, so
+
+0:00:06.530,0:00:09.790
+you have to create a new resource[br]container with two fields.
+
+0:00:09.790,0:00:11.800
+And then you can define[br]the method itself.
+
+0:00:11.800,0:00:15.520
+The request will be handled by the same[br]request container you just wrote.
+
+0:00:15.520,0:00:17.800
+The output will be the same hello class.
+
+0:00:17.800,0:00:19.710
+And the path will be greet[br]by period as we said.

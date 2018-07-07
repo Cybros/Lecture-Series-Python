@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Print Formatting FAQs</title>
+<style>body{font-family:sans-serif;background-color:#525659}.w3c-default{width:900px;padding:20px;background-color:white;margin:auto;min-height:1100px;margin-top:60px;box-shadow:8px 10px 20px #363636}.header{position:absolute;height:48px;display:table;background:#323639;color:#fff;top:0;left:0;width:100%;margin:0 auto;box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2)}.title{left:30%;padding-left:300px;display:table-cell;vertical-align:middle;color:#f1f1f1;font-size:1.2em}</style>
+</head>
+<body>
+<div class="header"><span class="title">Print Formatting FAQs</span></div>
+<div class="w3c-default">
+        <p><strong style="">1.) I imported print from the __future__ module, now print isn't working. What happened?</strong><br style=""></p><p>This is because once you import from the __future__ module in Python 2.7, a print statement will no longer work, and print must then use a print() function<span>. Meaning that you must use</span></p><p><span><strong style="">print('Whatever you were going to print')</strong></span></p><p><span>or if you are using some formatting:</span></p><p><strong style=""><span>print(</span><span>'This is a string with an {p}'</span><span>.</span><span>format</span><span>(</span><span>p</span><span>=</span><span>'insert'</span></strong><span><strong style="">))</strong></span></p><p><span>The __future__ module allows you to use Python3 functionality in a Python2 environment, but some functionality is overwritten (such as the print statement, or classic division when you import division).</span></p><p><span>Since we are using Jupyter Notebooks, once you so the import, all cells will require the use if the print() <span>function. You will have to restart Python or start a new notebook to regain the old functionality back.</span></span></p><p><span><span><strong style="">HERE IS AN AWESOME SOURCE FOR PRINT FORMATTING:</strong></span></span></p><p><span><span><a href="https://pyformat.info/" rel="nofollow noreferrer" style="" target="_blank">https://pyformat.info/</a><br style=""></span></span></p>
+    </div>
+</div>
+
+</div>
+<body>
+</html>

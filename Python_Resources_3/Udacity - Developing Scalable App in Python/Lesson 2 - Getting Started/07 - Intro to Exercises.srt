@@ -1,0 +1,68 @@
+0:00:00.680,0:00:01.770
+Hi, welcome.
+
+0:00:01.770,0:00:04.700
+I'll be guiding you through[br]the coding lessons in this class.
+
+0:00:04.700,0:00:08.230
+The first thing you'll do is deploy a[br]simple app engine application that uses
+
+0:00:08.230,0:00:09.350
+endpoints.
+
+0:00:09.350,0:00:11.720
+You'll learn how to define[br]endpoint functions.
+
+0:00:11.720,0:00:14.632
+You'll learn how to call an endpoint[br]function from a webpage using
+
+0:00:14.632,0:00:16.091
+the JavaScript client library.
+
+0:00:16.091,0:00:19.520
+You'll also learn how to use the APIs[br]Explorer, which is a cool tool for
+
+0:00:19.520,0:00:21.865
+exploring publicly[br]available Google APIs, and
+
+0:00:21.865,0:00:24.680
+which also lets you test out[br]your own application's API.
+
+0:00:24.680,0:00:27.470
+The main coding project[br]that you'll be building in
+
+0:00:27.470,0:00:30.260
+this course is an application[br]called Conference Central.
+
+0:00:30.260,0:00:34.360
+It let's users schedule conferences and[br]also register to attend conferences.
+
+0:00:34.360,0:00:37.320
+You'll be focusing on implementing[br]the backend functions.
+
+0:00:37.320,0:00:39.860
+Just like on a cooking show[br]where some of the cakes
+
+0:00:39.860,0:00:43.120
+are already baked ahead of time,[br]we've written some of the code for you,
+
+0:00:43.120,0:00:46.870
+so that you can get straight to work[br]implementing the more interesting bits.
+
+0:00:46.870,0:00:49.660
+You'll start out by downloading[br]a skeleton version of the conference
+
+0:00:49.660,0:00:51.140
+central application.
+
+0:00:51.140,0:00:54.110
+Then, you can keep working on it,[br]from lesson to lesson.
+
+0:00:54.110,0:00:57.960
+But, at any point, if you don't complete[br]the exercises in a lesson, don't worry.
+
+0:00:57.960,0:01:00.510
+We provide new starting code for[br]each lesson.
+
+0:01:00.510,0:01:02.530
+Okay, let's go write[br]some endpoint functions.

@@ -1,0 +1,203 @@
+0:00:00.000,0:00:03.456
+Let's first go through the process of[br]running and testing a project locally,
+
+0:00:03.456,0:00:04.827
+then deploying to App Engine.
+
+0:00:04.827,0:00:06.759
+The app's very simple, and[br]it runs out of the box.
+
+0:00:06.759,0:00:08.878
+Let's first run it and[br]see what it does, and
+
+0:00:08.878,0:00:11.241
+then take a look at the code[br]that makes it happen.
+
+0:00:11.241,0:00:13.563
+First, open up App Engine Launcher.
+
+0:00:13.563,0:00:17.440
+Add a new project and point to the[br]directory for the hello endpoints app.
+
+0:00:17.440,0:00:20.548
+As you can see it gets added and[br]it will set a port for
+
+0:00:20.548,0:00:24.407
+the web interface and[br]different one for the admin interface.
+
+0:00:24.407,0:00:27.183
+The default port for[br]app engine is 80/80.
+
+0:00:27.183,0:00:29.763
+If you add several projects[br]to the launcher, the port for
+
+0:00:29.763,0:00:32.256
+the next app you add to[br]the launcher will be different.
+
+0:00:32.256,0:00:34.881
+So when testing locally,[br]pay attention to that port number.
+
+0:00:34.881,0:00:36.657
+Click the green Run button.
+
+0:00:36.657,0:00:39.975
+Then click on the Logs button to[br]see the deployment process, and
+
+0:00:39.975,0:00:41.394
+if there are any problems.
+
+0:00:41.394,0:00:42.276
+Look at the logs.
+
+0:00:42.276,0:00:44.959
+Once the app is deployed,[br]you'll see several lines.
+
+0:00:44.959,0:00:48.082
+One will tell you the URL and the port[br]that the app can be accessed at.
+
+0:00:48.082,0:00:51.138
+When you go to the URL for[br]that starting module default,
+
+0:00:51.138,0:00:52.576
+you should see this page.
+
+0:00:52.576,0:00:54.317
+Hm, it looks really basic.
+
+0:00:54.317,0:00:57.216
+Since this course is about[br]the back end part of the app,
+
+0:00:57.216,0:01:00.320
+we haven't put any CSS or[br]any other front end work into it.
+
+0:01:00.320,0:01:02.201
+So click on the buttons and[br]see what happens.
+
+0:01:02.201,0:01:07.942
+You know, my name's not actually Zebra,[br]so I'm going to change that.
+
+0:01:07.942,0:01:10.326
+That's much better.
+
+0:01:10.326,0:01:11.033
+Okay, great.
+
+0:01:11.033,0:01:12.228
+The local server works.
+
+0:01:12.228,0:01:14.730
+But if you want other people[br]to be able to access your app,
+
+0:01:14.730,0:01:16.408
+you have to deploy it onto App Engine.
+
+0:01:16.408,0:01:17.197
+Let's do that.
+
+0:01:17.197,0:01:18.393
+It's actually almost as easy.
+
+0:01:18.393,0:01:22.073
+You just press the deploy button and[br]it'll want your Google login.
+
+0:01:22.073,0:01:23.793
+The password is swordfish, by the way.
+
+0:01:23.793,0:01:27.148
+Let's take a look in the logs and[br]see how the deployment process goes.
+
+0:01:27.148,0:01:31.491
+Hm, appcfg.py has finished[br]with exit code one.
+
+0:01:31.491,0:01:33.813
+Exit code one is usually[br]not a good deal.
+
+0:01:33.813,0:01:35.665
+Let's see up here.
+
+0:01:35.665,0:01:36.914
+Begin server output.
+
+0:01:36.914,0:01:38.609
+This application does not exist.
+
+0:01:38.609,0:01:42.034
+App ID equals you, your project ID.
+
+0:01:42.034,0:01:44.509
+Oh, it's complaining that[br]it can't deploy to that.
+
+0:01:44.509,0:01:45.414
+That's right.
+
+0:01:45.414,0:01:48.990
+You have to actually enter your own[br]app ID into the configuration first.
+
+0:01:48.990,0:01:51.270
+So remember when you[br]created an App Engine app,
+
+0:01:51.270,0:01:53.787
+get that project ID from[br]the developer's console.
+
+0:01:53.787,0:01:56.388
+Don't use the one that you see in[br]this video, it won't work for you.
+
+0:01:56.388,0:01:57.351
+Get your own.
+
+0:01:57.351,0:02:01.239
+Then, in the code,[br]open up app.yaml, and replace your
+
+0:02:01.239,0:02:06.187
+project ID in the application line[br]with the one you got from the console.
+
+0:02:06.187,0:02:07.720
+And save that.
+
+0:02:07.720,0:02:10.758
+And when you go back to Google App[br]Engine Launcher you'll see that the name
+
+0:02:10.758,0:02:11.690
+has already changed.
+
+0:02:11.690,0:02:14.211
+Now you can deploy the app and
+
+0:02:14.211,0:02:20.319
+watch in the logs as it gets sent to[br]app engine compiled and deployed.
+
+0:02:20.319,0:02:24.449
+Eventually, you'll see,[br]completed updated of app, and
+
+0:02:24.449,0:02:28.339
+the URL for your app will[br]be your app id.appspot.com.
+
+0:02:28.339,0:02:33.297
+If you go to your app id.appspot.com,[br]you should see the very same thing.
+
+0:02:33.297,0:02:36.397
+So you now have the app running[br]both locally and on App Engine.
+
+0:02:36.397,0:02:38.498
+So now it's time to[br]explore how it works.
+
+0:02:38.498,0:02:39.960
+Let's take a look back at the code.
+
+0:02:39.960,0:02:44.594
+Let's take a look at helloworldapi.py,[br]and here we go, endpoints.api,
+
+0:02:44.594,0:02:46.034
+that sounds familiar.
+
+0:02:46.034,0:02:48.356
+Look at this, endpoints.method.
+
+0:02:48.356,0:02:51.203
+Hm, one of these things,[br]endpoints.api and
+
+0:02:51.203,0:02:54.637
+endpoints.method, oh this[br]uses Python decorators.
+
+0:02:54.637,0:02:56.850
+Maybe we should talk about those first.

@@ -1,0 +1,11 @@
+0:00:00.210,0:00:05.360
+Let's do a quiz now and talk about increasing capacity. The question is what are
+
+0:00:05.360,0:00:10.550
+the options to increase capacity? Is it, to buy more powerful hardware,
+
+0:00:11.780,0:00:17.340
+to optimize your software, to copy and run the software on more servers
+
+0:00:17.340,0:00:21.200
+or to change the software to run on more servers? Check all that apply.
