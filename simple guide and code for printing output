@@ -1,0 +1,6 @@
+# printing output by using python just need a simple code or we can say simple syntax
+# printing output depends on datatype : 1. int or 2. string
+# 1. code to print a int datatype value is as follows :-
+print 2                             #output will be 2
+# 2. code to print a string value is as follows :-
+print "Hello!"                      # it need to be in double quotes and output is Hello!
