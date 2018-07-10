@@ -1,0 +1,25 @@
+Python is a programming language that boasts a gentler learning curve, and a more intuitive coding style. Java is also another programming language, but with a distinct advantage compared to other programming languages. Programs made with Java can be run on any operating system that is able to run the Java virtual machine. This is because Java does not compile to native bytecode, like Python does; it compiles to a Java bytecode that can be read and executed by the virtual machine. The use of a virtual machine impairs the performance of Java programs due to the overhead incurred. Programs that are compiled to native code, like Python, can perform at its best because it can take advantage of optimizations. Although you can compile Java programs to native code, it does not perform as well.
+
+A key feature in Python is the use of whitespace to indicate the beginning and end of blocks of code. Java, like most programming languages, use braces for the same functionality. To compare one to the other, an opening curly brace for Java is equal to an increasing indentation in Python. The closing curly brace for Java is the equivalent of a decreasing curly brace in Python.
+
+Another difference between the two, is how they deal with variables. Java is a strongly typed language, while Python is not. Basically, Java does not allow the data type of a variable to be changed, while Python does. Unlike most programming languages, Python allows you to assign a string to a variable that once held an integer value. This is not possible with Java, and you need to define a variable for each one with the correct type.
+
+
+ 
+As a general comparison, we can say that Python is much simpler to use, and more compact than Java. It is generally easier to learn, and more forgiving when it comes to using shortcuts like reusing an old variable. You will also need fewer lines to write code in Python than in Java, partly due to the removal of the braces. As a side-effect, Python code is a bit easier to read and understand than Java.
+
+Summary:
+
+1. Java creates applications that work across various platforms, while Python does not.
+
+2. Java programs tend to run slower compared to Python programs.
+
+3. Java uses traditional braces to start and end blocks, while Python uses indentation.
+
+4. Java employs static typing, while Python is dynamically typed.
+
+5. Python is simpler and more compact compared to Java.
+
+
+
+Read more: Difference Between Python and Java | Difference Between http://www.differencebetween.net/technology/difference-between-python-and-java/#ixzz4vGsqHuKS
