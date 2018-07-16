@@ -1,0 +1,5 @@
+diff bw java and python
+
+The biggest difference between the two languages is that Java is a statically typed and Python is a dynamically typed.
+
+Python is strongly but dynamically typed. This means names in code are bound to strongly typed objects at runtime. The only condition on the type of object a name refers to is that it supports the operations required for the particular object instances in the program. For example, I might have two types Person and Car that both support operation "run", but Car also supports "refuel". So long as my program only calls "run" on objects, it doesn't matter if they are Person or Car. This is called "duck typing" after the expression "if it walks like a duck and talks like a duck, it's a duck".
